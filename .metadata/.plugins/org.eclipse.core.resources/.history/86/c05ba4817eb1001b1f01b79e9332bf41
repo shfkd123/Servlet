@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE sqlMap
+   PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+   "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="memberManagement">
+	
+	<!-- 전체회원 리스트 출력 -->
+	<select id="memberAllListPrint" resultClass="MemberManagement.dto.MemberManagementVO" parameterClass="MemberManagement.dto.MemberManagementVO">
+	 	SELECT MEM_ID     memId
+	 	       ,MEM_PASS   memPass
+	 	       ,MEM_HP     memHp
+	 	       ,MEM_EMAIL  memEmail
+		FROM MEMBER_MANAGEMENT
+	</select>
+	
+	<!-- 회원정보등록 -->
+	<insert id="memberInfoInsert" parameterClass="MemberManagement.dto.MemberManagementVO">
+		INSERT INTO MEMBER_MANAGEMENT(MEM_ID, MEM_PASS, MEM_HP, MEM_EMAIL)
+		VALUES(#memId#,#memPass#,#memHp#,#memEmail#)
+	</insert>
+	
+	
+	<!-- 회원정보수정 -->
+	<update id="memberInfoUpdate" parameterClass="MemberManagement.dto.MemberManagementVO">
+		UPDATE MEMBER_MANAGEMENT
+		SET MEM_PASS = #memPass#
+			,MEM_HP = #memHp#
+			,MEM_EMAIL = #memEmail#
+		WHERE MEM_ID = #memId#
+	</update>
+	
+	
+	<!-- 회원정보삭제 -->
+	<delete id="memberInfoDelete" parameterClass="String">
+		DELETE FROM MEMBER_MANAGEMENT
+		WHERE MEM_ID = #memId#
+	</delete>
+	
+	<!-- 회원정보상세조회 -->
+		<select id="getMemberInfo" resultClass="MemberManagement.dto.MemberManagementVO" parameterClass="MemberManagement.dto.MemberManagementVO">
+	 	SELECT MEM_ID     memId
+	 	       ,MEM_PASS   memPass
+	 	       ,MEM_HP     memHp
+	 	       ,MEM_EMAIL  memEmail
+		FROM MEMBER_MANAGEMENT
+	</select>
+	
+</sqlMap>

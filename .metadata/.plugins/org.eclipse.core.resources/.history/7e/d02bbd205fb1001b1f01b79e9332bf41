@@ -1,0 +1,16 @@
+<%@page import="java.util.Scanner"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page trimDirectiveWhitespaces="true" %>
+
+<%
+	Scanner sc = new Scanner(System.in);
+	int userNum =0;
+	System.out.println("숫자를 입력하세요");
+	userNum = sc.nextInt();
+
+	for(int i=1; i <= 9; i++){
+		System.out.println(userNum + "*" + i + " = " + userNum * i);
+	}
+
+%>

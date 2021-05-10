@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="jdk.nashorn.internal.runtime.regexp.joni.ScanEnvironment"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="member.dao.IMemberDao"/>
+<fullyQualifiedTypeName name="member.dao.MemberDaoImpl"/>
+<fullyQualifiedTypeName name="org.eclipse.jdt.internal.compiler.parser.Scanner"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
+<fullyQualifiedTypeName name="java.net.URLEncoder"/>
+<fullyQualifiedTypeName name="member.service.IMemberService"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="javax.servlet.ServletException"/>
+<fullyQualifiedTypeName name="com.servlet.exception.InvalidPasswordException"/>
+<fullyQualifiedTypeName name="com.servlet.view.HTMLView"/>
+<fullyQualifiedTypeName name="com.servlet.service.MemberService"/>
+<fullyQualifiedTypeName name="member.service.MemberServiceImpl"/>
+<fullyQualifiedTypeName name="com.servlet.service.MemberServiceImpl"/>
+<fullyQualifiedTypeName name="member.vo.MemberVO"/>
+<fullyQualifiedTypeName name="com.servlet.dao.MemberDAO"/>
+<fullyQualifiedTypeName name="member.util.SqlMapClientUtil"/>
+<fullyQualifiedTypeName name="com.servlet.dao.MemberDAOImpl"/>
+<fullyQualifiedTypeName name="java.nio.charset.Charset"/>
+<fullyQualifiedTypeName name="com.ibatis.common.resources.Resources"/>
+<fullyQualifiedTypeName name="java.io.Reader"/>
+<fullyQualifiedTypeName name="com.ibatis.sqlmap.client.SqlMapClientBuilder"/>
+<fullyQualifiedTypeName name="MemberManagement.dto.MemberManagementVO"/>
+<fullyQualifiedTypeName name="MemberManagement.dao.MemberManagementDao"/>
+<fullyQualifiedTypeName name="MemberManagement.service.MemberManagementService"/>
+<fullyQualifiedTypeName name="MemberManagement.dao.MemberManagementDaoImpl"/>
+<fullyQualifiedTypeName name="com.ibatis.sqlmap.client.SqlMapClient"/>
+<fullyQualifiedTypeName name="MemberManagement.util.SqlMapClientUtil"/>
+<fullyQualifiedTypeName name="MemberManagement.service.MemberManagementServiceImpl"/>
+<fullyQualifiedTypeName name="com.servlet.exception.NotFoundIDException"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.sql.SQLException"/>
+</qualifiedTypeNameHistroy>

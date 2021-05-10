@@ -1,0 +1,26 @@
+1620287760310	Rename package 'service'
+1620287764731	Delete element
+1620289145875	Rename package 'sqlMapClient'
+1620289151355	Rename package 'sqlmal'
+1620289287825	Delete element
+1620294414154	Rename resource 'SqlMapConfig.xml'
+1620294446678	Delete element
+1620294671565	Rename type 'memberDao'
+1620294694011	Rename type 'memberDaoImpl'
+1620294762602	Rename type 'memberService'
+1620295168804	Rename package 'member.controller'
+1620303759924	Delete element
+1620303766851	Copy files
+1620303772148	Delete elements
+1620363597593	Delete element
+1620371704551	Delete element
+1620373508579	Rename type 'MemberDAO'
+1620373544389	Delete element
+1620374019908	Rename package 'com.servlet.test'
+1620374047151	Move compilation unit
+1620451024208	Delete element
+1620451097593	Rename package 'exception'
+1620451119093	Rename package 'view'
+1620454506232	Rename type 'MemberManagementDao'
+1620455694034	Rename type 'MemberMManagementDao'
+1620461498205	Delete element
