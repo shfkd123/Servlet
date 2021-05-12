@@ -25,8 +25,7 @@
 	<!-- 회원정보수정 -->
 	<update id="memberInfoUpdate" parameterClass="MemberManagement.dto.MemberManagementVO">
 		UPDATE MEMBER_MANAGEMENT
-		SET MEM_ID = #memId#
-			,MEM_PASS = #memPass#
+		SET MEM_PASS = #memPass#
 			,MEM_HP = #memHp#
 			,MEM_EMAIL = #memEmail#
 		WHERE MEM_ID = #memId#
@@ -34,7 +33,7 @@
 	
 	
 	<!-- 회원정보삭제 -->
-	<delete id="memberInfoDelete" parameterClass="String">
+	<delete id="memberInfoDelete" parameterClass="MemberManagement.dto.MemberManagementVO">
 		DELETE FROM MEMBER_MANAGEMENT
 		WHERE MEM_ID = #memId#
 	</delete>

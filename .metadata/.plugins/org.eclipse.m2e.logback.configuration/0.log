@@ -135,3 +135,5 @@ Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find
 2021-05-10 20:35:13,064 [Worker-316: Debug Source Lookup] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/tomcat/tomcat-catalina/7.0.73/tomcat-catalina-7.0.73-sources.jar
 2021-05-10 20:35:19,067 [Worker-321: Debug Source Lookup] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/tomcat/tomcat7-websocket/7.0.73/tomcat7-websocket-7.0.73-sources.jar
 2021-05-10 20:35:19,605 [Worker-321: Debug Source Lookup] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/tomcat/tomcat7-websocket/7.0.73/tomcat7-websocket-7.0.73-sources.jar
+2021-05-11 08:45:34,620 [Worker-9: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-05-12 08:53:37,420 [Worker-1: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
