@@ -3,6 +3,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page trimDirectiveWhitespaces="true" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <%
 	List<MemberManagementVO> memList = (List<MemberManagementVO>)request.getAttribute("memList");
@@ -79,27 +80,19 @@
       </tr>
     </thead>
     <tbody>
-  		<%
-		int memSize = memList.size();
-	
-		if(memSize > 0){
-			for(int i = 0; i < memSize; i++){
-	%>
-		<tr>
-			<td><a href="/servlet_default/MemberInfoUpdateServlet?memId=<%=memList.get(i).getMemId() %>"><%=memList.get(i).getMemId() %></a></td>
-			<td><%=memList.get(i).getMemHp() %></td>
-			<td><%=memList.get(i).getMemEmail() %></td>
-		</tr>
-		<%				
-			}
-		}else {	
-	%>
+	<c:if test="${empty memList} ">
 		<tr>
 			<td colspan="3">회원정보가 없습니다.</td>
+		<tr>		
+	</c:if>
+	<c:forEach items="${memList }" var="member" >
 		<tr>
-			<% 
-		}
-	%>
+			<td><a href="/servlet_default/MemberInfoUpdateServlet?memId=${member.memId }">${member.memId }</a></td>
+			<td>${member.memHp }</td>
+			<td>${member.memEmail }</td>
+		</tr>
+	
+	</c:forEach>
     </tbody>
   </table>
       <br><br> 

@@ -7,6 +7,7 @@ import com.ibatis.sqlmap.client.SqlMapClient;
 
 import MemberManagement.dto.MemberManagementVO;
 import MemberManagement.util.SqlMapClientUtil;
+import member.vo.MemberVO;
 
 public class MemberManagementDaoImpl implements MemberManagementDao {
 	
@@ -67,6 +68,18 @@ public class MemberManagementDaoImpl implements MemberManagementDao {
 	public MemberManagementVO getMemberInfo(SqlMapClient smc, String memId) throws SQLException {
 		MemberManagementVO mv = (MemberManagementVO)smc.queryForObject("memberManagement.getMemberInfo", memId);
 		return mv;
+	}
+
+	@Override
+	public boolean checkMember(SqlMapClient smc, MemberVO mv) throws SQLException {
+		boolean chk = false; // 중복되면 false
+
+		int cnt = (int) smc.queryForObject("memberManagement.checkMember", mv);
+
+		if (cnt > 0) {
+			chk = true; // 중복이 아니면 true
+		}
+		return chk;
 	}
 
 }

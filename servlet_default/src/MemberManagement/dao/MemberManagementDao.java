@@ -6,6 +6,7 @@ import java.util.List;
 import com.ibatis.sqlmap.client.SqlMapClient;
 
 import MemberManagement.dto.MemberManagementVO;
+import member.vo.MemberVO;
 
 public interface MemberManagementDao {
 	
@@ -23,5 +24,9 @@ public interface MemberManagementDao {
 	
 	//회원 정보 조회
 	public MemberManagementVO getMemberInfo(SqlMapClient smc, String memId) throws SQLException;
+	
+	//회원이 존재하는지 여부 판단
+	public boolean checkMember(SqlMapClient smc, MemberVO mv) throws SQLException;
+	
 	
 }

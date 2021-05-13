@@ -46,6 +46,7 @@
       <h4>MEMBER MANAGEMENT</h4>
       <ul class="nav nav-pills nav-stacked">
         <li class="active"><a href="memberMain.jsp">HOME</a></li>
+        <li><a href="memberMain.jsp">로그인</a></li>
         <li><a href="/servlet_default/MemberInfoServlet">회원정보등록</a></li>
         <li><a href="/servlet_default/MemberManagementServlet">회원정보조회</a></li>
       </ul><br>

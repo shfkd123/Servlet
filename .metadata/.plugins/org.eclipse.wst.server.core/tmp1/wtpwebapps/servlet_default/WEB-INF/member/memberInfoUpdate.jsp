@@ -71,19 +71,19 @@
 		<form id="fm">
 	    <div class="form-group">
 	      <label for="memId">I	D:</label>
-	      <input type="text" class="form-control" id="memId" value="<%=mv.getMemId() %>" name="memId">
+	      <input type="text" class="form-control" id="memId" value="${mv.memId}" name="memId">
 	    </div>
 	    <div class="form-group">
 	      <label for="memPass">비밀번호:</label>
-	      <input type="text" class="form-control" id="memPass" value="<%=mv.getMemPass()%>" name="memPass">
+	      <input type="text" class="form-control" id="memPass" value="${mv.memPass}" name="memPass">
 	    </div>
 	    <div class="form-group">
 	      <label for="memHp">전화번호:</label>
-	      <input type="text" class="form-control" id="memHp" value="<%=mv.getMemHp()%>" name="memHp">
+	      <input type="text" class="form-control" id="memHp" value="${mv.memHp}" name="memHp">
 	    </div>
 	    <div class="form-group">
 	      <label for="memEmail">이메일:</label>
-	      <input type="text" class="form-control" id="memEmail" value="<%=mv.getMemEmail()%>" name="memEmail">
+	      <input type="text" class="form-control" id="memEmail" value="${mv.memEmail}" name="memEmail">
 	    </div>
 	
 		<button type="button" id="updateBtn" class="btn btn-primary" onclick="update()">정보수정</button>
