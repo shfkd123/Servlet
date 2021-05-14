@@ -13,7 +13,7 @@ import member.service.IMemberService;
 import member.service.MemberServiceImpl;
 import member.vo.MemberVO;
 
-@WebServlet("/Login.html")
+@WebServlet("/MemberLoginServlet")
 public class MemberLoginServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

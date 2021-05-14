@@ -14,3 +14,6 @@
 5월 11, 2021 09:31:19.55 [1624:10900:0511/093119.555:ERROR:device_event_log_impl.cc(214)] [09:31:19.556] USB: usb_service_win.cc:258 Failed to get device driver name: ��Ұ� �����ϴ�. (0x490)
 5월 11, 2021 14:41:48.58 [1624:10900:0511/144148.586:ERROR:device_event_log_impl.cc(214)] [14:41:48.599] USB: usb_service_win.cc:258 Failed to get device driver name: ��Ұ� �����ϴ�. (0x490)
 5월 11, 2021 14:41:48.60 [1624:10900:0511/144148.602:ERROR:device_event_log_impl.cc(214)] [14:41:48.603] USB: usb_service_win.cc:281 SetupDiEnumDeviceInterfaces: ��� ������ �����Ͱ� �����ϴ�. (0x103)
+
+5월 14, 2021 13:31:42.66 NEW SESSION
+5월 14, 2021 13:31:42.66 [9376:16292:0514/133142.664:ERROR:device_event_log_impl.cc(214)] [13:31:42.663] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
