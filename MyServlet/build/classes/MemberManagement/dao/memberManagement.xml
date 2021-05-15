@@ -10,6 +10,7 @@
 	<select id="memberAllListPrint" resultClass="MemberManagement.dto.MemberManagementVO" parameterClass="MemberManagement.dto.MemberManagementVO">
 	 	SELECT MEM_ID     memId
 	 	       ,MEM_PASS   memPass
+	 	       ,MEM_NAME   memName
 	 	       ,MEM_HP     memHp
 	 	       ,MEM_EMAIL  memEmail
 		FROM MEMBER_MANAGEMENT
@@ -17,8 +18,8 @@
 	
 	<!-- 회원정보등록 -->
 	<insert id="memberInfoInsert" parameterClass="MemberManagement.dto.MemberManagementVO">
-		INSERT INTO MEMBER_MANAGEMENT(MEM_ID, MEM_PASS, MEM_HP, MEM_EMAIL)
-		VALUES(#memId#,#memPass#,#memHp#,#memEmail#)
+		INSERT INTO MEMBER_MANAGEMENT(MEM_ID, MEM_NAME, MEM_PASS, MEM_HP, MEM_EMAIL)
+		VALUES(#memId#,#memName#,#memPass#,#memHp#,#memEmail#)
 	</insert>
 	
 	
@@ -26,6 +27,7 @@
 	<update id="memberInfoUpdate" parameterClass="MemberManagement.dto.MemberManagementVO">
 		UPDATE MEMBER_MANAGEMENT
 		SET MEM_PASS = #memPass#
+			,MEM_NAME  #memName#
 			,MEM_HP = #memHp#
 			,MEM_EMAIL = #memEmail#
 		WHERE MEM_ID = #memId#
@@ -41,11 +43,17 @@
 	<!-- 회원정보상세조회 -->
 		<select id="getMemberInfo" resultClass="MemberManagement.dto.MemberManagementVO" parameterClass="String">
 	 	SELECT MEM_ID     memId
+	 		   ,MEM_NAME   memName
 	 	       ,MEM_PASS   memPass
 	 	       ,MEM_HP     memHp
 	 	       ,MEM_EMAIL  memEmail
 		FROM MEMBER_MANAGEMENT
 		WHERE MEM_ID = #memId#
+	</select>
+	
+	<select id="checkMember" parameterClass="MemberManagement.dto.MemberManagementVO" resultClass="int">
+	SELECT COUNT(*) AS CNT 
+	FROM MEMBER_MANAGEMENT WHERE MEM_ID = #memId#
 	</select>
 	
 </sqlMap>

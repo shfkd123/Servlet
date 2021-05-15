@@ -68,11 +68,18 @@ public class MemberManagementDaoImpl implements MemberManagementDao {
 		MemberManagementVO mv = (MemberManagementVO)smc.queryForObject("memberManagement.getMemberInfo", memId);
 		return mv;
 	}
-
+	
+	// 회원이 존재하는지 여부를 알아내는 메서드
 	@Override
 	public boolean checkMember(SqlMapClient smc, MemberManagementVO mv) throws SQLException {
-		// TODO Auto-generated method stub
-		return false;
+		boolean chk = false;
+		
+		int cnt = (int) smc.queryForObject("memberManagement.checkMember", mv);
+		
+		if(cnt > 0) {
+			chk = true;
+		}
+		return chk;
 	}
 
 }

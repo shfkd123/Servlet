@@ -3,15 +3,23 @@ package MemberManagement.dto;
 public class MemberManagementVO {
 	
 	private String memId;
+	private String memName;
 	private String memPass;
 	private String memHp;
 	private String memEmail;
+	
 	
 	public String getMemId() {
 		return memId;
 	}
 	public void setMemId(String memId) {
 		this.memId = memId;
+	}
+	public String getMemName() {
+		return memName;
+	}
+	public void setMemName(String memName) {
+		this.memName = memName;
 	}
 	public String getMemPass() {
 		return memPass;

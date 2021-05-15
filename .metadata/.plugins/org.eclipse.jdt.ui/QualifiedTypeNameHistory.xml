@@ -26,15 +26,16 @@
 <fullyQualifiedTypeName name="com.ibatis.common.resources.Resources"/>
 <fullyQualifiedTypeName name="java.io.Reader"/>
 <fullyQualifiedTypeName name="com.ibatis.sqlmap.client.SqlMapClientBuilder"/>
-<fullyQualifiedTypeName name="MemberManagement.dto.MemberManagementVO"/>
 <fullyQualifiedTypeName name="MemberManagement.dao.MemberManagementDao"/>
-<fullyQualifiedTypeName name="MemberManagement.service.MemberManagementService"/>
 <fullyQualifiedTypeName name="MemberManagement.dao.MemberManagementDaoImpl"/>
 <fullyQualifiedTypeName name="com.ibatis.sqlmap.client.SqlMapClient"/>
 <fullyQualifiedTypeName name="MemberManagement.util.SqlMapClientUtil"/>
-<fullyQualifiedTypeName name="MemberManagement.service.MemberManagementServiceImpl"/>
 <fullyQualifiedTypeName name="com.servlet.exception.NotFoundIDException"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="MemberManagement.controller.MemberManagementServlet"/>
+<fullyQualifiedTypeName name="MemberManagement.service.MemberManagementService"/>
+<fullyQualifiedTypeName name="MemberManagement.service.MemberManagementServiceImpl"/>
+<fullyQualifiedTypeName name="MemberManagement.dto.MemberManagementVO"/>
 </qualifiedTypeNameHistroy>

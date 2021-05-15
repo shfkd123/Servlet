@@ -96,4 +96,16 @@ public class MemberManagementServiceImpl implements MemberManagementService {
 		return mv;
 	}
 
+	@Override
+	public boolean checkMember(MemberManagementVO mv) {
+		boolean chk = false;
+		
+		try {
+			chk = memDao.checkMember(smc, mv);
+		}catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return chk;
+	}
+
 }

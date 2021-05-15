@@ -20,4 +20,7 @@ public interface MemberManagementService {
 	
 	//회원정보 상세 조회
 	public MemberManagementVO getMemberInfo(String memId);
+	
+	//주어진 회원ID가 존재하는지 판단 
+	public boolean checkMember(MemberManagementVO mv);
 }
