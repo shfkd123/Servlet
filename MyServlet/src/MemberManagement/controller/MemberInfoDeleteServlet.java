@@ -42,7 +42,7 @@ public class MemberInfoDeleteServlet extends HttpServlet {
 		
 		int cnt = service.memberInfoDelete(mv);
 		
-		response.sendRedirect("/servlet_default/MemberManagementServlet");
+		response.sendRedirect("/MyServlet/MemberManagementServlet");
 	}
 
 }

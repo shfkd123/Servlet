@@ -9,6 +9,8 @@ D:\A_TeachingMaterial\6.JspSpring\workspace\.metadata\.plugins\org.eclipse.jst.j
 \JSP_Bootstrap\src
 D:\A_TeachingMaterial\6.JspSpring\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1500354978.index
 \servlet_default222\src
+D:\A_TeachingMaterial\6.JspSpring\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\614272934.index
+\MyServlet2\src
 D:\A_TeachingMaterial\6.JspSpring\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1381665784.index
 \naver_search\src
 D:\A_TeachingMaterial\6.JspSpring\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1490926524.index
@@ -43,3 +45,5 @@ D:\A_TeachingMaterial\6.JspSpring\workspace\.metadata\.plugins\org.eclipse.jst.j
 \JSP_01\src
 D:\A_TeachingMaterial\6.JspSpring\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1250069591.index
 \JSP_basic\src
+D:\A_TeachingMaterial\6.JspSpring\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\197570563.index
+\MyServlet2\src

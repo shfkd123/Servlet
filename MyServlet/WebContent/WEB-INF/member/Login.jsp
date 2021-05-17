@@ -29,7 +29,7 @@
           <input type="password" name="memPass" class="form-control" />
         </div>
         <input type="submit" value="Login" class="btn" />
-        <p class="text-p">Don't have an account? <a href="/MyServlet/MemberInfoServlet">Sign up</a> </p>
+        <p class="text-p">Don't have an account? <a href="/MyServlet/MemberInfoInsertServlet">Sign up</a> </p>
     </form>
   </div>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

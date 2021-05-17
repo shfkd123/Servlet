@@ -3,8 +3,8 @@ package MemberManagement.dto;
 public class MemberManagementVO {
 	
 	private String memId;
-	private String memName;
 	private String memPass;
+	private String memName;
 	private String memHp;
 	private String memEmail;
 	
@@ -15,17 +15,17 @@ public class MemberManagementVO {
 	public void setMemId(String memId) {
 		this.memId = memId;
 	}
-	public String getMemName() {
-		return memName;
-	}
-	public void setMemName(String memName) {
-		this.memName = memName;
-	}
 	public String getMemPass() {
 		return memPass;
 	}
 	public void setMemPass(String memPass) {
 		this.memPass = memPass;
+	}
+	public String getMemName() {
+		return memName;
+	}
+	public void setMemName(String memName) {
+		this.memName = memName;
 	}
 	public String getMemHp() {
 		return memHp;

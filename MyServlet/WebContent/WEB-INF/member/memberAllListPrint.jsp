@@ -39,7 +39,7 @@
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="//" class="nav-link">Home</a>
+        <a href="/MyServlet//starter.jsp" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="/MyServlet/MemberLoginServlet" class="nav-link">Login</a>
@@ -182,10 +182,10 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="<%=request.getContextPath() %>/resources/bootstrap/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+          
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+          
         </div>
       </div>
 
@@ -219,6 +219,12 @@
                 <a href="/MyServlet/MemberManagementServlet" class="nav-link active">
                   <i class="far fa-circle nav-icon"></i>
                   <p>회원조회</p>
+                </a>
+              </li>
+             <li class="nav-item">
+                <a href="/MyServlet/MemberInfoInsertAdminServlet" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>회원등록</p>
                 </a>
               </li>
             </ul>
@@ -273,7 +279,7 @@
 	<c:forEach items="${memList }" var="member" >
 		<tr>
 			<td>${member.memId }</td>
-			<td><a href="/servlet_default/MemberInfoUpdateServlet?memId=${member.memId }">${member.memName }</a></td>
+			<td><a href="/MyServlet/MemberInfoServlet?memId=${member.memId }">${member.memName }</a></td>
 			<td>${member.memHp }</td>
 			<td>${member.memEmail }</td>
 		</tr>

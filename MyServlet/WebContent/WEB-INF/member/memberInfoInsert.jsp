@@ -15,7 +15,7 @@
   <body>
   <div class="form-box">
     <div class="head">Sign Up</div>        
-    <form action="/MyServlet/MemberInfoServlet" method="post" id="login-form">
+    <form action="/MyServlet/MemberInfoInsertServlet" method="post" id="login-form">
         <div class="form-group">
           <label class="label-control">
             <span class="label-text">I	D</span>

@@ -33,8 +33,11 @@ public class MemberInfoUpdateServlet extends HttpServlet {
 	}
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("utf-8");
+		
 		String memId = request.getParameter("memId");
 		String memPass = request.getParameter("memPass");
+		String memName = request.getParameter("memName");
 		String memHp = request.getParameter("memHp");
 		String memEmail = request.getParameter("memEmail");
 		
@@ -45,12 +48,24 @@ public class MemberInfoUpdateServlet extends HttpServlet {
 		
 		mv.setMemId(memId);
 		mv.setMemPass(memPass);
+		mv.setMemName(memName);
 		mv.setMemHp(memHp);
 		mv.setMemEmail(memEmail);
 		
 		int cnt = service.memberInfoUpdate(mv);
 		
-		response.sendRedirect("/servlet_default/MemberManagementServlet");
+		String msg = "";
+		
+		if(cnt > 0) {
+			msg = "성공";
+		}else {
+			msg = "실패";
+		}
+		
+		String redirectUrl = request.getContextPath() + 
+				"/MyServlet/MemberManagementServlet?msg=" + URLEncoder.encode(msg, "UTF-8"); 
+		response.sendRedirect(redirectUrl);
+
 	}
 
 }

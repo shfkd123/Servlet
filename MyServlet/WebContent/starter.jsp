@@ -2,15 +2,11 @@
     pageEncoding="UTF-8"%>
 <%@ page trimDirectiveWhitespaces="true" %>
 <!DOCTYPE html>
-<!--
-This is a starter template page. Use this page to start your new project from
-scratch. This page gets rid of all links and provides the needed markup only.
--->
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Starter</title>
+  <title>Home</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -30,7 +26,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
-        <a href="index3.html" class="nav-link">Home</a>
+        <a href="##" class="nav-link">Home</a>
       </li>
       <li class="nav-item d-none d-sm-inline-block">
         <a href="/MyServlet/MemberLoginServlet" class="nav-link">Login</a>
@@ -173,10 +169,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
-          <img src="<%=request.getContextPath() %>/resources/bootstrap/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+           
         </div>
         <div class="info">
-          <a href="#" class="d-block">Alexander Pierce</a>
+          
         </div>
       </div>
 
@@ -212,6 +208,12 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <p>회원조회</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="/MyServlet/MemberInfoInsertAdminServlet" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>회원등록</p>
+                </a>
+              </li>
             </ul>
           </li>
         </ul>
@@ -228,11 +230,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0">Main Home</h1>
+            <h1 class="m-0">Main Page</h1>
           </div><!-- /.col -->
           <div class="col-sm-6">
-            <ol class="breadcrumb float-sm-right">
-            </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -281,19 +281,78 @@ scratch. This page gets rid of all links and provides the needed markup only.
    			</div>
       	</div>
       	<div class="row"> 
-      		<div class="card col-sm-4">
+      		<div class="col-sm-4">
+      			<div class="card">
+      				<div class="card-body">body</div>
+      			</div>
+      		</div>
+   			<div class="col-sm-4">
+      			<div class="card">
+      				<div class="card-body">body</div>
+      			</div>
+      		</div>
+   			<div class="col-sm-4">
+      			<div class="card">
+      				<div class="card-body">body</div>
+      			</div>
+      		</div>
+      	</div>
+      </div><!-- /.container-fluid -->
+    </div>
+      	<div class="row">
+      		<div class="col-sm-6">
+      			<div class="row">
+      			<div class="card col-sm-12">
+      				<div class="card-body">body</div>
+      			</div>
+      		</div>
+      		<div class="row">
+      		<div class="col-sm-6">
+      			<div class="card">
+      				<div class="card-body">body</div>
+      			</div>
+      		</div>
+      		<div class="col-sm-6">
+      			<div class="card">
+      				<div class="card-body">body</div>
+      			</div>
+      		</div>
+      		</div>
+      	</div>
+      	<div class="col-sm-6">
+      	<div class="row">
+      		<div class="col-sm-8">
+   			<div class="card">
    				<div class="card-body">body</div>
    			</div>
-   			<div class="card col-sm-4">
+   			</div>
+   			<div class="col-sm-4">
+   			<div class="card">
    				<div class="card-body">body</div>
    			</div>
-   			<div class="card col-sm-4">
-   				<div class="card-body">body</div>
    			</div>
+      	</div>
+      	<div class="row"> 
+      		<div class="col-sm-4">
+      			<div class="card">
+      				<div class="card-body">body</div>
+      			</div>
+      		</div>
+   			<div class="col-sm-4">
+      			<div class="card">
+      				<div class="card-body">body</div>
+      			</div>
+      		</div>
+   			<div class="col-sm-4">
+      			<div class="card">
+      				<div class="card-body">body</div>
+      			</div>
+      		</div>
       	</div>
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content -->
+  </div>
   </div>
   <!-- /.content-wrapper -->
 
@@ -311,10 +370,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <footer class="main-footer">
     <!-- To the right -->
     <div class="float-right d-none d-sm-inline">
-      Anything you want
+     
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    <strong>김민지 &copy; 2021/05/17 <a href="##">MemberManagement</a>.</strong> 대덕인재개발원
   </footer>
 </div>
 <!-- ./wrapper -->
