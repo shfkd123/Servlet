@@ -32,6 +32,6 @@
     </environment>
   </environments>
   <mappers>
-    <mapper resource="kr/or/ddit/mybatis/mappers/Menu-Mapper.xml"/>
+    <mapper resource="kr/or/ddit/mybatis/Menu-Mapper.xml"/>
   </mappers>
 </configuration>

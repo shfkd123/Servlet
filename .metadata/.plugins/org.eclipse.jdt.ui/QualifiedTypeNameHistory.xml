@@ -24,7 +24,6 @@
 <fullyQualifiedTypeName name="com.servlet.dao.MemberDAOImpl"/>
 <fullyQualifiedTypeName name="java.nio.charset.Charset"/>
 <fullyQualifiedTypeName name="com.ibatis.common.resources.Resources"/>
-<fullyQualifiedTypeName name="java.io.Reader"/>
 <fullyQualifiedTypeName name="com.ibatis.sqlmap.client.SqlMapClientBuilder"/>
 <fullyQualifiedTypeName name="MemberManagement.dao.MemberManagementDao"/>
 <fullyQualifiedTypeName name="MemberManagement.dao.MemberManagementDaoImpl"/>
@@ -38,4 +37,20 @@
 <fullyQualifiedTypeName name="MemberManagement.service.MemberManagementService"/>
 <fullyQualifiedTypeName name="MemberManagement.service.MemberManagementServiceImpl"/>
 <fullyQualifiedTypeName name="MemberManagement.dto.MemberManagementVO"/>
+<fullyQualifiedTypeName name="javax.annotation.Resource"/>
+<fullyQualifiedTypeName name="java.io.Reader"/>
+<fullyQualifiedTypeName name="javax.annotation.Resources"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSessionFactoryBuilder"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.io.Resources"/>
+<fullyQualifiedTypeName name="kr.or.ddit.mybatis.TestOracleMyBatisSqlSessionFactory"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSessionFactory"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
+<fullyQualifiedTypeName name="kr.or.ddit.mybatis.OracleMyBatisSqlSessionFactory"/>
+<fullyQualifiedTypeName name="org.junit.Before"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="kr.or.ddit.dto.MenuVO"/>
+<fullyQualifiedTypeName name="org.junit.After"/>
+<fullyQualifiedTypeName name="junit.framework.Assert"/>
+<fullyQualifiedTypeName name="org.junit.Assert"/>
 </qualifiedTypeNameHistroy>
