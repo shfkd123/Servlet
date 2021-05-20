@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+<typeInfo handle="=command_bootstrap/src&lt;kr.or.ddit.service{MenuService.java[MenuService" modifiers="513" timestamp="1621491421151"/>
+<typeInfo handle="=command_bootstrap/src&lt;kr.or.ddit.dao{MenuDAO.java[MenuDAO" modifiers="513" timestamp="1621487767808"/>
+<typeInfo handle="=MyServlet_MyBatis/src&lt;kr.or.ddit.service{MemberManagementService.java[MemberManagementService" modifiers="513" timestamp="1621508959016"/>
+</typeInfoHistroy>

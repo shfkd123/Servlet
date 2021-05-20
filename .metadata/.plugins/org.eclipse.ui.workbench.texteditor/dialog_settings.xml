@@ -9,14 +9,17 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="return sqlSessionFactory.getConfiguration();" key="selection"/>
+		<item value="" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="return null;"/>
 			<item value="// TODO Auto-generated method stub"/>
+			<item value="MemberManagementVO mv"/>
+			<item value="수정"/>
+			<item value="MemberManagement.dto.MemberManagementVO"/>
+			<item value="return null;"/>
 			<item value="Servlet"/>
 			<item value="MEMBER MANAGEMENT"/>
 			<item value="Starter Page"/>
@@ -27,11 +30,11 @@
 			<item value="href"/>
 			<item value="write"/>
 			<item value="default"/>
-			<item value="defalut"/>
 		</list>
 		<list key="replacehistory">
-			<item value="return sqlSessionFactory.getConfiguration();"/>
 			<item value=""/>
+			<item value="member"/>
+			<item value="return sqlSessionFactory.getConfiguration();"/>
 			<item value="println"/>
 		</list>
 	</section>

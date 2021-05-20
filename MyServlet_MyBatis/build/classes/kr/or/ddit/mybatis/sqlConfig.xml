@@ -1,0 +1,37 @@
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+
+<configuration>
+
+<properties resource = "kr/or/ddit/properties/db.properties" />
+
+<typeAliases>
+	<typeAlias type="java.lang.String" alias="str"/>
+	<typeAlias type="java.lang.Integer" alias="int"/>
+	
+	<typeAlias type="kr.or.ddit.dto.MemberManagementVO" alias="member" />
+</typeAliases>
+
+
+  <environments default="development">
+    <environment id="development">
+      <transactionManager type="JDBC"/>
+      <dataSource type="POOLED">
+        <property name="driver" value="${driverClassName}"/>
+        <property name="url" value="${url}"/>
+        <property name="username" value="${username}"/>
+        <property name="password" value="${password}"/>
+        
+        <!-- pool setting -->
+        <property name="poolMaximumActiveConnections" value="2"/>
+        <property name="poolMaximumIdleConnections" value="2"/>
+        
+      </dataSource>
+    </environment>
+  </environments>
+  <mappers>
+    <mapper resource="kr/or/ddit/mybatis/MemberManagement.xml"/>
+  </mappers>
+</configuration>
