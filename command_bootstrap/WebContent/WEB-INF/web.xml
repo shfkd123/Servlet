@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app>
+	<!-- <context-param> 컨텍스트 초기화 파라미터, application 내장객체로 접근가능하며, 한 Web 프로젝트에서 공통으로 사용  -->
 	<context-param>
 		<param-name>testParam</param-name>
 		<param-value>Good Day!</param-value>
 	</context-param>
-	
 	
 	<listener>
 		<listener-class>kr.or.ddit.listener.ApplicationContextInitListener</listener-class>
