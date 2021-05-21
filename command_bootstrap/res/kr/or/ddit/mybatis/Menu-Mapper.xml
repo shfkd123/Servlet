@@ -11,7 +11,7 @@
 		from menu
 		where mCode like '%'||'0000'||'%'
 		order by mCode asc		
-	</select>
+	</select>  
 
 	<select id="selectSubMenu" resultType="menu">
 		select *
@@ -23,6 +23,6 @@
 		select *
 		from menu
 		where mCode = #{mCode}		
-	</select>
+	</select>         
   
 </mapper>

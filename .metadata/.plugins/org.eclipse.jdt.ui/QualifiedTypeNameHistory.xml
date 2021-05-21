@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="jdk.nashorn.internal.runtime.regexp.joni.ScanEnvironment"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="member.dao.IMemberDao"/>
 <fullyQualifiedTypeName name="member.dao.MemberDaoImpl"/>
 <fullyQualifiedTypeName name="org.eclipse.jdt.internal.compiler.parser.Scanner"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServlet"/>
@@ -30,7 +27,6 @@
 <fullyQualifiedTypeName name="com.ibatis.sqlmap.client.SqlMapClient"/>
 <fullyQualifiedTypeName name="MemberManagement.util.SqlMapClientUtil"/>
 <fullyQualifiedTypeName name="com.servlet.exception.NotFoundIDException"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="MemberManagement.controller.MemberManagementServlet"/>
 <fullyQualifiedTypeName name="MemberManagement.service.MemberManagementService"/>
 <fullyQualifiedTypeName name="MemberManagement.service.MemberManagementServiceImpl"/>
@@ -41,22 +37,27 @@
 <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSessionFactoryBuilder"/>
 <fullyQualifiedTypeName name="org.apache.ibatis.io.Resources"/>
 <fullyQualifiedTypeName name="kr.or.ddit.mybatis.TestOracleMyBatisSqlSessionFactory"/>
-<fullyQualifiedTypeName name="kr.or.ddit.dto.MenuVO"/>
 <fullyQualifiedTypeName name="kr.or.ddit.dao.MenuDAO"/>
 <fullyQualifiedTypeName name="kr.or.ddit.dao.MenuDAOImpl"/>
-<fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSessionFactory"/>
 <fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
 <fullyQualifiedTypeName name="kr.or.ddit.dao.MemberManagementDAO"/>
 <fullyQualifiedTypeName name="kr.or.ddit.mybatis.OracleMyBatisSqlSessionFactory"/>
 <fullyQualifiedTypeName name="kr.or.ddit.dao.MemberManagementDAOImpl"/>
-<fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="com.sun.xml.internal.bind.v2.schemagen.xmlschema.List"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="org.junit.Before"/>
-<fullyQualifiedTypeName name="org.junit.Test"/>
-<fullyQualifiedTypeName name="junit.framework.Assert"/>
-<fullyQualifiedTypeName name="org.junit.Assert"/>
 <fullyQualifiedTypeName name="org.junit.After"/>
 <fullyQualifiedTypeName name="kr.or.ddit.dto.MemberManagementVO"/>
+<fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="org.junit.Before"/>
+<fullyQualifiedTypeName name="kr.or.ddit.service.MenuServiceImpl"/>
+<fullyQualifiedTypeName name="kr.or.ddit.service.MockMenuDAO"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="junit.framework.Assert"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="kr.or.ddit.dto.MenuVO"/>
+<fullyQualifiedTypeName name="org.junit.Assert"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
 </qualifiedTypeNameHistroy>
