@@ -23,7 +23,7 @@ public class MenuDAOImpl implements MenuDAO {
 
 	@Override
 	public MenuVO selectMenuByMcode(SqlSession session, String mCode) throws SQLException {
-		MenuVO menu = session.selectOne("Menu-Mapper.selectMenuByMcode");
+		MenuVO menu = session.selectOne("Menu-Mapper.selectMenuByMcode", mCode);
 		return menu;
 	}
 

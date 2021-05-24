@@ -31,10 +31,6 @@ public class DOMParser {
 			Node node = childeren.item(i);
 			if (node.getNodeType() == Node.ELEMENT_NODE) { // 해당 노드의 종류 판정(Element일 때)
 				Element ele = (Element) node;
-
-				
-				
-				
 				String nodeName = ele.getNodeName();
 				System.out.println("node name: " + nodeName);
 				System.out.println("key: " + ele.getAttribute("id"));

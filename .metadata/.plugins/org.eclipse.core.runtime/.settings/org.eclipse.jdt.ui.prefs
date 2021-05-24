@@ -5,11 +5,14 @@ content_assist_proposals_background=255,255,255
 content_assist_proposals_foreground=0,0,0
 eclipse.preferences.version=1
 java_comment_task_tag=255,255,0
-java_multi_line_comment=255,255,0
-java_single_line_comment=255,255,0
+java_multi_line_comment=128,128,128
+java_single_line_comment=128,128,128
 org.eclipse.jdt.internal.ui.navigator.layout=1
 org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.exception.name=e
 org.eclipse.jdt.ui.formatterprofiles.version=14
+org.eclipse.jdt.ui.gettersetter.use.is=true
+org.eclipse.jdt.ui.overrideannotation=true
 org.eclipse.jdt.ui.text.code_templates_migrated=true
 org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
 org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
