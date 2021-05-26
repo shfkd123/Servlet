@@ -14,8 +14,8 @@ import kr.or.ddit.context.ApplicationContext;
 import kr.or.ddit.dto.MenuVO;
 import kr.or.ddit.service.MenuService;
 
-@WebServlet("/index.html")
-public class MainMenuServlet extends HttpServlet {
+@WebServlet("/index.htm")
+public class IndexServlet extends HttpServlet {
 
 	private MenuService menuService = (MenuService) ApplicationContext.getApplicationContext().get("menuService");
 
