@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.servlet.service.MemberService"/>
-<fullyQualifiedTypeName name="member.service.MemberServiceImpl"/>
-<fullyQualifiedTypeName name="com.servlet.service.MemberServiceImpl"/>
-<fullyQualifiedTypeName name="member.vo.MemberVO"/>
-<fullyQualifiedTypeName name="com.servlet.dao.MemberDAO"/>
-<fullyQualifiedTypeName name="member.util.SqlMapClientUtil"/>
 <fullyQualifiedTypeName name="com.servlet.dao.MemberDAOImpl"/>
 <fullyQualifiedTypeName name="java.nio.charset.Charset"/>
 <fullyQualifiedTypeName name="com.ibatis.common.resources.Resources"/>
@@ -40,7 +34,6 @@
 <fullyQualifiedTypeName name="org.junit.Before"/>
 <fullyQualifiedTypeName name="kr.or.ddit.service.MenuServiceImpl"/>
 <fullyQualifiedTypeName name="kr.or.ddit.service.MockMenuDAO"/>
-<fullyQualifiedTypeName name="java.lang.Exception"/>
 <fullyQualifiedTypeName name="junit.framework.Assert"/>
 <fullyQualifiedTypeName name="org.junit.Test"/>
 <fullyQualifiedTypeName name="org.junit.Assert"/>
@@ -60,4 +53,11 @@
 <fullyQualifiedTypeName name="kr.or.ddit.service.MenuService"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="kr.or.ddit.dto.MenuVO"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="com.fasterxml.jackson.databind.ObjectMapper"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="kr.or.ddit.utils.JSONResolver"/>
+<fullyQualifiedTypeName name="kr.or.ddit.service.MemberManagementService"/>
+<fullyQualifiedTypeName name="kr.or.ddit.service.MemberManagementServiceImpl"/>
 </qualifiedTypeNameHistroy>

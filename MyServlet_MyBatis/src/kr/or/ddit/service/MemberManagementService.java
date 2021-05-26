@@ -15,7 +15,7 @@ public interface MemberManagementService {
 	
 	public int memberInfoDelete(MemberManagementVO mv) throws SQLException;
 	
-	public MemberManagementVO getMemberInfo(String memId) throws SQLException;
+	public MemberManagementVO getMemberInfo(String id) throws SQLException;
 	
 	public boolean checkMember(MemberManagementVO mv) throws SQLException;
 	

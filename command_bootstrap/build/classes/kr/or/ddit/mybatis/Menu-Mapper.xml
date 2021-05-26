@@ -16,7 +16,7 @@
 	<select id="selectSubMenu" resultType="menu">
 		select *
 		from menu
-		where upCode = #{mCode} and isNav = 1		
+		where upCode = #{mCode} 		
 	</select>
 
 	<select id="selectMenuByMcode" resultType="menu">

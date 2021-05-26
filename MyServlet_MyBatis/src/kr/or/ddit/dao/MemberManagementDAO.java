@@ -21,7 +21,7 @@ public interface MemberManagementDAO {
 	public int memberInfoDelete(SqlSession session, MemberManagementVO mv) throws SQLException;
 	
 	//회원 정보 조회
-	public MemberManagementVO getMemberInfo(SqlSession session, String memId) throws SQLException;
+	public MemberManagementVO getMemberInfo(SqlSession session, String id) throws SQLException;
 	
 	//회원이 존재하는지 여부 판단
 	public boolean checkMember(SqlSession session, MemberManagementVO mv) throws SQLException;

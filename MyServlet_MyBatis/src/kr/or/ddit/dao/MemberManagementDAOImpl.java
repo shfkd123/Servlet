@@ -47,8 +47,8 @@ public class MemberManagementDAOImpl implements MemberManagementDAO{
 	}
 
 	@Override
-	public MemberManagementVO getMemberInfo(SqlSession session, String memId) throws SQLException {
-		MemberManagementVO mv = session.selectOne("MemManage.getMemberInfo", memId);
+	public MemberManagementVO getMemberInfo(SqlSession session, String id) throws SQLException {
+		MemberManagementVO mv = session.selectOne("MemManage.getMemberInfo", id);
 		return mv;
 	}
 

@@ -18,7 +18,7 @@ public class MemberManagementServiceImpl implements MemberManagementService {
 		this.memDao = memDao;
 	}
 	
-	private SqlSessionFactory sqlSessionFactory = new OracleMyBatisSqlSessionFactory();
+	private SqlSessionFactory sqlSessionFactory;
 	public void setSqlSessionFactory(SqlSessionFactory SqlSessionFactory) {
 		this.sqlSessionFactory = SqlSessionFactory;
 	}
@@ -76,13 +76,13 @@ public class MemberManagementServiceImpl implements MemberManagementService {
 	}
 
 	@Override
-	public MemberManagementVO getMemberInfo(String memId) throws SQLException {
+	public MemberManagementVO getMemberInfo(String id) throws SQLException {
 		
 		MemberManagementVO mv = null;
 		
 		SqlSession session = sqlSessionFactory.openSession();
 		
-		mv = memDao.getMemberInfo(session, memId);
+		mv = memDao.getMemberInfo(session, id);
 		
 		session.close();
 		

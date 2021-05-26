@@ -7,49 +7,82 @@
 	
 	<!-- 전체회원 리스트 출력 -->
 	<select id="memberAllListPrint" resultType="member" parameterType="member">
-		SELECT MEM_ID     memId
-	 	       ,MEM_PASS   memPass
-	 	       ,MEM_NAME   memName
-	 	       ,MEM_HP     memHp
-	 	       ,MEM_EMAIL  memEmail
-		FROM MEMBER_MANAGEMENT
+		SELECT  ID          id
+		        PWD         pwd
+		        EMAIL       email
+		        PICTURE     picture
+		        ENABLED     enabled
+		        REGDATE     regdate
+	 	        PHONE       phone
+	 	        NAME        name
+	 	        REGISTER    register
+	 	        ADDRESS     address   
+	 	        AUTHORITY   authority 
+		FROM MEMBER 
 	</select>
 	
 	<!-- 회원정보등록 -->
 	<insert id="memberInfoInsert" parameterType="member">
-		INSERT INTO MEMBER_MANAGEMENT(MEM_ID, MEM_NAME, MEM_PASS, MEM_HP, MEM_EMAIL)
-		VALUES(#{memId},#{memName},#{memPass},#{memHp},#{memEmail})
+		INSERT INTO 
+			MEMBER ( 
+			   ID       
+	          ,PWD      
+	          ,EMAIL    
+	          ,PICTURE  
+	          ,ENABLED  
+	          ,REGDATE  
+	          ,PHONE    
+	          ,NAME     
+	          ,REGISTER 
+	          ,ADDRESS  
+	          AUTHORITY
+			)
+		VALUES(#{id},#{pwd},#{email},#{picture},#{enabled},#{regdate},#{phone},#{name},#{register},#{address},#{authority})
 	</insert>
 	
 	<!-- 회원정보수정 -->
 	<update id="memberInfoUpdate" parameterType="member">
-		UPDATE MEMBER_MANAGEMENT
-		SET MEM_PASS = #{memPass}	
-			,MEM_HP = #{memHp}
-			,MEM_EMAIL = #{memEmail}
-		WHERE MEM_ID = #{memId}
+		UPDATE MEMBER
+		SET ID = #{id}
+			,PWD = #{pwd}
+			,EMAIL = #{email}
+			,PICTURE = #{picture}
+			,ENABLED = #{enabled}
+			,REGDATE = #{regdate}
+			,PHONE = #{phone}
+			,NAME = #{name}
+			,REGISTER = #{register}
+			,ADDRESS = #{address}
+			AUTHORITY = #{authority}
+		WHERE ID = #{id}
 	</update>
 	
 	<!-- 회원정보삭제 -->
 	<delete id="memberInfoDelete" parameterType="member">
-		DELETE FROM MEMBER_MANAGEMENT
-		WHERE MEM_ID = #{memId}
+		DELETE FROM MEMBER
+		WHERE ID = #{id}
 	</delete>
 	
 	<!-- 회원정보상세조회 -->
 	<select id="getMemberInfo" resultType="member" parameterType="member">
-		SELECT MEM_ID     memId
-	 	       ,MEM_PASS   memPass
-	 		   ,MEM_NAME   memName
-	 	       ,MEM_HP     memHp
-	 	       ,MEM_EMAIL  memEmail
-		FROM MEMBER_MANAGEMENT
-		WHERE MEM_ID = #{memId}
+		SELECT  ID      	id
+		        PWD         pwd
+		        EMAIL       email
+		        PICTURE     picture
+		        ENABLED     enabled
+		        REGDATE     regdate
+	 	        PHONE       phone
+	 	        NAME        name
+	 	        REGISTER    register
+	 	        ADDRESS     address   
+	 	        AUTHORITY   authority 
+		FROM MEMBER 
+		WHERE ID = #{id}
 	</select>
 	
 	<!-- 회원아이디로 회원 존재여부 체크 -->
 	<select id="checkMember" resultType="member" parameterType="member">
 		SELECT COUNT(*) AS CNT 
-		FROM MEMBER_MANAGEMENT WHERE MEM_ID = #{memId}
+		FROM MEMBER WHERE WHERE ID = #{id}
 	</select>
 </mapper>
