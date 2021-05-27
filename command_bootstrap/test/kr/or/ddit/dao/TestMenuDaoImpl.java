@@ -41,7 +41,7 @@ public class TestMenuDaoImpl {
 	}*/
 	
 	@After
-	public void coplete() {
+	public void complete() {
 		session.rollback();
 		session.close();
 	}
