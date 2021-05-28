@@ -9,18 +9,20 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="handlebars" key="selection"/>
+		<item value="" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="// TODO Auto-generated method stub"/>
+			<item value="MemberManagementVO"/>
+			<item value="MemberManagementDAO"/>
 			<item value="handlebars"/>
 			<item value="memId"/>
 			<item value="/resources"/>
 			<item value="src"/>
 			<item value="href"/>
-			<item value="// TODO Auto-generated method stub"/>
 			<item value="MemberManagementVO mv"/>
 			<item value="수정"/>
 			<item value="MemberManagement.dto.MemberManagementVO"/>
@@ -28,14 +30,14 @@
 			<item value="Servlet"/>
 			<item value="MEMBER MANAGEMENT"/>
 			<item value="Starter Page"/>
-			<item value="Home"/>
-			<item value="&lt;!-- Right navbar links --&gt;"/>
 		</list>
 		<list key="replacehistory">
+			<item value=""/>
+			<item value="MemberVO"/>
+			<item value="MemberDAO"/>
 			<item value="id"/>
 			<item value="&lt;%=request.getContextPath()%&gt;/resources"/>
 			<item value="&lt;%=request.getContextPath() %&gt;/resources/bootstrap/plugins/"/>
-			<item value=""/>
 			<item value="member"/>
 			<item value="return sqlSessionFactory.getConfiguration();"/>
 			<item value="println"/>
