@@ -1,10 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-<typeInfo handle="=command_bootstrap/src&lt;kr.or.ddit.service{MenuService.java[MenuService" modifiers="513" timestamp="1621491421151"/>
-<typeInfo handle="=command_bootstrap/src&lt;kr.or.ddit.dao{MenuDAO.java[MenuDAO" modifiers="513" timestamp="1621487767808"/>
 <typeInfo handle="=MyServlet_MyBatis/src&lt;kr.or.ddit.service{MemberManagementService.java[MemberManagementService" modifiers="513" timestamp="1621944525297"/>
-<typeInfo handle="=command_bootstrap/D:\/B_Util\/5.ApacheTomcat\/apache-tomcat-7.0.73-windows-x64\/apache-tomcat-7.0.73\/lib\/tomcat-coyote.jar&lt;org.apache.tomcat.util.net(AprEndpoint$Handler.class[Handler" modifiers="1545" timestamp="1478528994000"/>
-<typeInfo handle="=command_bootstrap/src&lt;kr.or.ddit.handler{Handler.java[Handler" modifiers="513" timestamp="1622092989330"/>
-<typeInfo handle="=command_bootstrap/src&lt;kr.or.ddit.dao{MemberDAO.java[MemberDAO" modifiers="513" timestamp="1622182102994"/>
-<typeInfo handle="=command_bootstrap/src&lt;kr.or.ddit.service{MemberService.java[MemberService" modifiers="513" timestamp="1622182767546"/>
 </typeInfoHistroy>

@@ -9,12 +9,15 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="" key="selection"/>
+		<item value="button" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="button"/>
+			<item value="selectMemberById"/>
+			<item value="MemManage"/>
 			<item value="// TODO Auto-generated method stub"/>
 			<item value="MemberManagementVO"/>
 			<item value="MemberManagementDAO"/>
@@ -27,11 +30,9 @@
 			<item value="수정"/>
 			<item value="MemberManagement.dto.MemberManagementVO"/>
 			<item value="return null;"/>
-			<item value="Servlet"/>
-			<item value="MEMBER MANAGEMENT"/>
-			<item value="Starter Page"/>
 		</list>
 		<list key="replacehistory">
+			<item value="Member-Mapper"/>
 			<item value=""/>
 			<item value="MemberVO"/>
 			<item value="MemberDAO"/>
@@ -47,7 +48,7 @@
 		<item value="288" key="DIALOG_WIDTH"/>
 		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
 		<item value="391" key="DIALOG_HEIGHT"/>
-		<item value="1409" key="DIALOG_X_ORIGIN"/>
-		<item value="271" key="DIALOG_Y_ORIGIN"/>
+		<item value="1346" key="DIALOG_X_ORIGIN"/>
+		<item value="382" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>
