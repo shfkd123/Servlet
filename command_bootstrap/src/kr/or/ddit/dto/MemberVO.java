@@ -1,5 +1,7 @@
 package kr.or.ddit.dto;
 
+import java.util.Date;
+
 public class MemberVO {
 
 	private String id; //아이디
@@ -8,7 +10,7 @@ public class MemberVO {
 	private String phone; //전화번호
 	private String email; //이메일
 	private String picture; //사진파일 경로/파일명
-	private String regDate; //등록일 
+	private Date regDate; //등록일 
 	private String authority; //권한
 	private int enabled; //사용여부
 	private String register; //등록자
@@ -51,10 +53,10 @@ public class MemberVO {
 	public void setPicture(String picture) {
 		this.picture = picture;
 	}
-	public String getRegDate() {
+	public Date getRegDate() {
 		return regDate;
 	}
-	public void setRegDate(String regDate) {
+	public void setRegDate(Date regDate) {
 		this.regDate = regDate;
 	}
 	public String getAuthority() {
