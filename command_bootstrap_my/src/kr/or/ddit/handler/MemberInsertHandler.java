@@ -40,8 +40,8 @@ public class MemberInsertHandler implements Handler {
 			mv.setName(name);
 			mv.setEmail(email);
 			mv.setPicture(picture);
-			mv.setEnabled(enabled);
-			mv.setRegdate(regdate);
+//			mv.setEnabled(enabled);
+//			mv.setRegdate(regdate);
 			mv.setPhone(phone);
 			mv.setRegister(register);
 			mv.setAddress(address);

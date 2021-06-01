@@ -2,9 +2,11 @@ package kr.or.ddit.service;
 
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Map;
 
 import kr.or.ddit.exception.NotFoundIDException;
 import kr.or.ddit.command.Criteria;
+import kr.or.ddit.command.SearchCriteria;
 import kr.or.ddit.dto.MemberVO;
 import kr.or.ddit.exception.InvalidPasswordException;
 
@@ -16,8 +18,10 @@ public interface MemberService {
 	MemberVO getMember(String id) throws SQLException;
 	
 	//회원리스트
-	List<MemberVO> getMemberList() throws SQLException;
-	List<MemberVO> getMemberList(Criteria cri) throws SQLException; //오버로딩 기능의 확장 
+	List<MemberVO> getMemberList() throws SQLException; //전체리스트
+	List<MemberVO> getMemberList(Criteria cri) throws SQLException; //오버로딩 기능의 확장  //현재 보고 있는 리스트 
+	Map<String, Object> getMemberList(SearchCriteria cri) throws SQLException;//오버로딩 기능의 확장  //검색한 결과 리스트
+	
 	
 	
 }

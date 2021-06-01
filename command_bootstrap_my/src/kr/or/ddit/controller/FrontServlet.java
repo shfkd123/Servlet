@@ -46,6 +46,7 @@ public class FrontServlet extends HttpServlet {
 					
 				} catch (Exception e) {
 					response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+					e.printStackTrace();
 				}
 				
 			}else {

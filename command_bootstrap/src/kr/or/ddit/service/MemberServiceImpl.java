@@ -1,12 +1,16 @@
 package kr.or.ddit.service;
 
 import java.sql.SQLException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 
 import kr.or.ddit.command.Criteria;
+import kr.or.ddit.command.PageMaker;
+import kr.or.ddit.command.SearchCriteria;
 import kr.or.ddit.dao.MemberDAO;
 import kr.or.ddit.dto.MemberVO;
 import kr.or.ddit.exception.InvalidPasswordException;
@@ -76,6 +80,28 @@ public class MemberServiceImpl implements MemberService {
 		try {			
 			List<MemberVO> memList = memberDAO.selectMemberList(session,cri);
 			return memList;
+		} finally {
+			session.close();
+		}
+	}
+
+	@Override
+	public Map<String, Object> getMemberList(SearchCriteria cri) throws SQLException {
+		SqlSession session = sqlSessionFactory.openSession();
+		
+		Map<String, Object> dataMap = new HashMap<String, Object>();
+		try {			
+			
+			PageMaker pageMaker = new PageMaker();
+			pageMaker.setCri(cri);
+			pageMaker.setTotalCount(memberDAO.selectMemberListCount(session, cri));
+			
+			List<MemberVO> memList = memberDAO.selectMemberList(session,cri);
+			
+			dataMap.put("memberList", memList);
+			dataMap.put("pageMaker", pageMaker);
+			return dataMap;
+		
 		} finally {
 			session.close();
 		}

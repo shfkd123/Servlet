@@ -17,7 +17,7 @@
 
       <%@ include file="/WEB-INF/views/include/main_header.jsp" %>
       <%@ include file="/WEB-INF/views/include/main_aside.jsp" %>
-      <div class="content-wrapper">
+      <div class="content-wrapper" style="background-color: #ffff">
          <iframe name='ifr' src="/main.do" frameborder="0" style="width: 100%; height: 80vh;"></iframe>
       </div>
       <%@ include file="/WEB-INF/views/include/main_footer.jsp" %>

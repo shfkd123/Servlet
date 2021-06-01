@@ -4,11 +4,6 @@
 	pageEncoding="UTF-8"%>
 <%@ page trimDirectiveWhitespaces="true"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%
-	List<MemberVO> memList = (List<MemberVO>)request.getAttribute("memList");
-	
-	String msg = request.getParameter("msg") == null ? "": request.getParameter("msg");
-%>
 <!DOCTYPE html>
 <html>
 <head>
