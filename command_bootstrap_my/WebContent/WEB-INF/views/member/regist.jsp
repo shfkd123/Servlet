@@ -123,15 +123,22 @@
 <!-- /.content-wrapper -->
 
 
-<form role="imageForm" action="upload/picture.do" method="post" enctype="multipart/form-data">
-	<input id="inputFile" name="pictureFile" type="file" class="form-control" 
-			style="display:none;">
+<form role="imageForm" method="post" enctype="multipart/form-data">
+	<input id="inputFile" name="pictureFile" type="file" class="form-control" onchange="picture_go()" style="display:none;">
 	<input id="oldFile" type="hidden" name="oldPicture" value="" />
 	<input type="hidden" name="checkUpload" value="0" />	
 </form>
 
 
-<script src="/resources/js/common/common.js"></script>  
+<script type="text/javascript">
+var formData = "";
+
+function picture_go(){
+	//폼 객체를 잡는다.
+	formData = new FormData($('form[role="imageForm"]')[0]);
+	alert("file choice");
+}
+</script>  
 
 </body>
 </html>

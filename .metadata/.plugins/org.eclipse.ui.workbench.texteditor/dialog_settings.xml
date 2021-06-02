@@ -9,12 +9,14 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="picture.do" key="selection"/>
+		<item value="picture_go" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="picture_go"/>
+			<item value="picture_go();"/>
 			<item value="picture.do"/>
 			<item value="picture"/>
 			<item value="스파이시 이탈리안 단품"/>
@@ -28,8 +30,6 @@
 			<item value="MemManage"/>
 			<item value="MemberManagementVO"/>
 			<item value="MemberManagementDAO"/>
-			<item value="handlebars"/>
-			<item value="memId"/>
 		</list>
 		<list key="replacehistory">
 			<item value="MemberListSearchPageHandler"/>

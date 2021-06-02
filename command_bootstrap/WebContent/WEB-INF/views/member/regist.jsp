@@ -123,7 +123,7 @@
 <!-- /.content-wrapper -->
 
 
-<form role="imageForm" action="upload/picture.do" method="post" enctype="multipart/form-data">
+<form role="imageForm" method="post" enctype="multipart/form-data">
 	<input id="inputFile" name="pictureFile" type="file" class="form-control" onchange="picture_go();"
 			style="display:none;">
 	<input id="oldFile" type="hidden" name="oldPicture" value="" />
