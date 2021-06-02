@@ -27,9 +27,8 @@
 									<div class="input-group input-group-sm">
 										<label for="inputFile" class=" btn btn-warning btn-sm btn-flat input-group-addon">파일선택</label>
 										<input id="inputFileName" class="form-control" type="text" name="tempPicture" disabled/>
-										<input id="picture" class="form-control" type="hidden" name="picture" />
 										<span class="input-group-append-sm">											
-											<button type="button" class="btn btn-info btn-sm btn-append" onclick="">업로드</button>											
+											<button type="button" class="btn btn-info btn-sm btn-append" onclick="upload_go();">업로드</button>											
 										</span>
 									</div>
 								</div>
@@ -106,10 +105,10 @@
 							<div class="row">								
 								<div class="col-sm-6">
 									<button type="button" id="registBtn" onclick="" class="btn btn-info">가입하기</button>
-							 	</div>
+							 	</div> 
 							 	
 							 	<div class="col-sm-6">
-									<button type="button" id="cancelBtn" onclick="CloseWindow('/index.do?mCode=M010100');"
+									<button type="button" id="cancelBtn" onclick=""
 										class="btn btn-default float-right">&nbsp;&nbsp;&nbsp;취 &nbsp;&nbsp;소&nbsp;&nbsp;&nbsp;</button>
 								</div>
 							
@@ -125,15 +124,96 @@
 
 
 <form role="imageForm" action="upload/picture.do" method="post" enctype="multipart/form-data">
-	<input id="inputFile" name="pictureFile" type="file" class="form-control" 
+	<input id="inputFile" name="pictureFile" type="file" class="form-control" onchange="picture_go();"
 			style="display:none;">
 	<input id="oldFile" type="hidden" name="oldPicture" value="" />
 	<input type="hidden" name="checkUpload" value="0" />	
 </form>
 
 
-<script src="/resources/js/common/common.js"></script>  
+<script>
+var formData ="";
+
+function picture_go(){
+	//폼 객체를 잡는다.
+	formData = new FormData($('form[role="imageForm"]')[0]);
+	//alert("file choice");
+	
+	var form = $('form[role="imageForm"]');
+	var picture = form.find('[name=pictureFile]')[0];
+	
+	//업로드 확인변수 초기화
+   	//find
+    //checkUpload의 값을 0으로 초기화 한다
+	form.find('[name="checkUpload"]').val(0);
+	var fileFormat=
+		picture.value.substr(picture.value.lastIndexOf(".")+1).toUpperCase();
+		
+	//유효성 체크 :이미지 확장자 jpg 확인
+	if(!(fileFormat=="JPG" || fileFormat=="JPEG")){
+		alert("이미지는 jpg/jpeg 형식만 가능합니다.");
+		picture.val("");		
+		return;
+	} 
+	
+	//이미지 파일 용량 체크
+	if(picture.files[0].size>1024*1024*1){
+		alert("사진 용량은 1MB 이하만 가능합니다.");
+		return;
+	};
+	
+	//이름 가지고와서 띄우기
+	document.getElementById('inputFileName').value=picture.files[0].name;
+	
+// 	console.log(picture.files)
+// 	console.log("0" + picture.files[0])
+// 	console.log(picture.files[1])
+
+	if (picture.files && picture.files[0]) { //(1) 파일이 선택되어 있는지 확인
+		var reader = new FileReader();//(2) 있으면 FileReader 생성
+		 reader.onload = function (e) {//(4) url에 결과 붙이기
+			  $('div#pictureView')
+	        	.css({'background-image':'url('+e.target.result+')',
+					  'background-position':'center',
+					  'background-size':'cover',//cover : 작은 변에 맞추기, 빈틈이 없음, 썸네일 적절
+					  'background-repeat':'no-repeat'
+	        		});
+		  }
+		reader.readAsDataURL(picture.files[0]);//(3) 파일이 있으면 니가 읽어!
+		
+	}
+} 
+
+function upload_go(){
+	//alert("upload btn click");
+	if($('input[name="pictureFile"]').val()==""){
+		alert("사진을 선택하세요.");
+		$('input[name="pictureFile"]').click();
+		return;
+	};	
+	
+	$.ajax({
+		url:"<%=request.getContextPath()%>/member/picture.do",
+		data:formData,
+		type:'post',
+		processData:false,
+		contentType:false,
+		success:function(data){
+			//업로드 확인변수 세팅
+			$('input[name="checkUpload"]').val(1);
+			
+			//저장된 파일명 저장.
+			$('input#oldFile').val(data); // 변경시 삭제될 파일명
+			$('form[role="form"]  input[name="picture"]').val(data);
+			
+			alert("사진이 업로드 되었습니다.");
+		},
+		error:function(error){
+			alert("현재 사진 업로드가 불가합니다.\n 관리자에게 연락바랍니다.");
+		}
+	});
+}
+
+</script>
 
 </body>
-</html>
-

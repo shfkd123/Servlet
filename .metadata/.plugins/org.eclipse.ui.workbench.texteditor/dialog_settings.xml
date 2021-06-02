@@ -9,12 +9,17 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="MemberListSearchPageHandler" key="selection"/>
+		<item value="picture.do" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="picture.do"/>
+			<item value="picture"/>
+			<item value="스파이시 이탈리안 단품"/>
+			<item value="oldfile"/>
+			<item value="old"/>
 			<item value="MemberListSearchPageHandler"/>
 			<item value="perPageNum"/>
 			<item value="// TODO Auto-generated method stub"/>
@@ -25,11 +30,6 @@
 			<item value="MemberManagementDAO"/>
 			<item value="handlebars"/>
 			<item value="memId"/>
-			<item value="/resources"/>
-			<item value="src"/>
-			<item value="href"/>
-			<item value="MemberManagementVO mv"/>
-			<item value="수정"/>
 		</list>
 		<list key="replacehistory">
 			<item value="MemberListSearchPageHandler"/>
@@ -48,8 +48,8 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="288" key="DIALOG_WIDTH"/>
 		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
-		<item value="391" key="DIALOG_HEIGHT"/>
-		<item value="675" key="DIALOG_X_ORIGIN"/>
-		<item value="382" key="DIALOG_Y_ORIGIN"/>
+		<item value="376" key="DIALOG_HEIGHT"/>
+		<item value="1241" key="DIALOG_X_ORIGIN"/>
+		<item value="400" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

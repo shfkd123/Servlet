@@ -4,85 +4,47 @@
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="Member-Mapper">
-	
-	<!-- 전체회원 리스트 출력 -->
-	<select id="memberAllListPrint" resultType="member" parameterType="member">
-		SELECT  ID          id
-		        ,PWD         pwd
-		        ,EMAIL       email
-		        ,PICTURE     picture
-		        ,ENABLED     enabled
-		        ,REGDATE     regdate
-	 	        ,PHONE       phone
-	 	        ,NAME        name
-	 	        ,REGISTER    register
-	 	        ,ADDRESS     address   
-	 	        ,AUTHORITY   authority 
-		FROM MEMBER 
-	</select>
-	
-	<!-- 회원정보등록 -->
-	<insert id="memberInfoInsert" parameterType="member">
-		INSERT INTO 
-			MEMBER ( 
-			   ID       
-	          ,PWD      
-	          ,EMAIL    
-	          ,PICTURE  
-	          ,ENABLED  
-	          ,REGDATE  
-	          ,PHONE    
-	          ,NAME     
-	          ,REGISTER 
-	          ,ADDRESS  
-	          AUTHORITY
-			)
-		VALUES(#{id},#{pwd},#{email},#{picture},#{enabled},#{regdate},#{phone},#{name},#{register},#{address},#{authority})
-	</insert>
-	
-	<!-- 회원정보수정 -->
-	<update id="memberInfoUpdate" parameterType="member">
-		UPDATE MEMBER
-		SET ID = #{id}
-			,PWD = #{pwd}
-			,EMAIL = #{email}
-			,PICTURE = #{picture}
-			,ENABLED = #{enabled}
-			,REGDATE = #{regdate}
-			,PHONE = #{phone}
-			,NAME = #{name}
-			,REGISTER = #{register}
-			,ADDRESS = #{address}
-			AUTHORITY = #{authority}
-		WHERE ID = #{id}
-	</update>
-	
-	<!-- 회원정보삭제 -->
-	<delete id="memberInfoDelete" parameterType="member">
-		DELETE FROM MEMBER
-		WHERE ID = #{id}
-	</delete>
-	
-	<!-- 회원정보상세조회 -->
-	<select id="selectMemberById" resultType="member" parameterType="member">
-		SELECT  ID      	id
-		        ,PWD         pwd
-		        ,EMAIL       email
-		        ,PICTURE     picture
-		        ,ENABLED     enabled
-		        ,REGDATE     regdate
-	 	        ,PHONE       phone
-	 	        ,NAME        name
-	 	        ,REGISTER    register
-	 	        ,ADDRESS     address   
-	 	        ,AUTHORITY   authority 
-		FROM MEMBER 
-		WHERE ID = #{id}
-	</select>
-	
-	<!-- 회원아이디로 회원 존재여부 체크 -->
-	<select id="checkMember" resultType="member" parameterType="member">
-		SELECT COUNT(*) AS CNT 
-		FROM MEMBER WHERE WHERE ID = #{id}
-	</select>
+   
+   <sql id="search">
+      <if test="searchType == 'i'.toString()">
+         and id like '%' || #{keyword} || '%'
+      </if>
+      <if test="searchType == 'p'.toString()">
+         and phone like '%' || #{keyword} || '%'
+      </if>
+      <if test="searchType == 'e'.toString()">
+         and email like '%' || #{keyword} || '%'
+      </if>
+   </sql>
+   
+   <select id="selectSearchMemberList" resultType="member">
+      select 
+      *
+      from member
+      where id is not null
+      <include refid="search"/>
+      order by regDate desc
+   </select>
+   
+   <select id="selectSearchMemberListCount" resultType="int">
+      select
+      count(*)
+      from member
+      where id is not null
+         <include refid="search" />
+   </select>
+
+   
+   <select id="selectMemberById" parameterType="str" resultType="member">
+      select *
+      from member
+      where id=#{id}      
+   </select>  
+   
+   <select id="selectMemberList" resultType="member">
+      select
+      *
+      from member   
+   </select>  
+
 </mapper>

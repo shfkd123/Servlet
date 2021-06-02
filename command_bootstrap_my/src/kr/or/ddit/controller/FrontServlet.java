@@ -30,6 +30,21 @@ public class FrontServlet extends HttpServlet {
 			command = command.substring(request.getContextPath().length());
 		}
 		
+//		// 로그인 확인
+//		if (!command.contains("login")) {
+//			HttpSession session = request.getSession();
+//			MemberVO member = (MemberVO) session.getAttribute("loginUser");
+//			if (member == null) {
+//				response.setContentType("text/html;charset=utf-8");
+//				PrintWriter out = response.getWriter();
+//				out.println("<script>");
+//				out.println("alert('로그인은 필수입니다.');");
+//				out.println("location.href='/';");
+//				out.println("</script>");
+//				return;
+//						
+//			}
+//		}
 		
 		System.out.println(command);
 		//commandHandler 실행 (HandlerMapper 의뢰 handler 할당)
@@ -50,7 +65,8 @@ public class FrontServlet extends HttpServlet {
 				}
 				
 			}else {
-				response.sendError(HttpServletResponse.SC_BAD_REQUEST);
+				response.sendError(HttpServletResponse.SC_NOT_FOUND);
+				
 			}
 		}else {
 			response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);

@@ -5,7 +5,7 @@
 <typeInfo handle="=command_bootstrap/D:\/B_Util\/2.Java\/jdk 1.8\/jre\/lib\/rt.jar&lt;java.nio.file(DirectoryStream$Filter.class[Filter" modifiers="1545" timestamp="1610359322136"/>
 <typeInfo handle="=command_bootstrap_my/D:\/B_Util\/2.Java\/jdk 1.8\/jre\/lib\/rt.jar&lt;com.sun.net.httpserver(Filter.class[Filter" modifiers="1057" timestamp="1610359322136"/>
 <typeInfo handle="=command_bootstrap/src&lt;kr.or.ddit.command{Criteria.java[Criteria" modifiers="1" timestamp="1622513793308"/>
-<typeInfo handle="=command_bootstrap/src&lt;kr.or.ddit.handler{Handler.java[Handler" modifiers="513" timestamp="1622092989330"/>
 <typeInfo handle="=command_bootstrap_my/src&lt;kr.or.ddit.dao{NoticeDAO.java[NoticeDAO" modifiers="513" timestamp="1622540846273"/>
 <typeInfo handle="=command_bootstrap/D:\/B_Util\/2.Java\/jdk 1.8\/jre\/lib\/rt.jar&lt;com.sun.corba.se.impl.ior(Handler.class[Handler" modifiers="1536" timestamp="1610359322136"/>
+<typeInfo handle="=command_bootstrap/src&lt;kr.or.ddit.handler{Handler.java[Handler" modifiers="513" timestamp="1622092989330"/>
 </typeInfoHistroy>

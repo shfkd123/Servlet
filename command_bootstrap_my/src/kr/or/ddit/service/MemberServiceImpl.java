@@ -1,13 +1,17 @@
 package kr.or.ddit.service;
 
 import java.sql.SQLException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 
+import kr.or.ddit.command.Criteria;
+import kr.or.ddit.command.PageMaker;
+import kr.or.ddit.command.SearchCriteria;
 import kr.or.ddit.dao.MemberDAO;
-import kr.or.ddit.dao.MemberDAOImpl;
 import kr.or.ddit.dto.MemberVO;
 import kr.or.ddit.exception.InvalidPasswordException;
 import kr.or.ddit.exception.NotFoundIDException;
@@ -20,91 +24,10 @@ public class MemberServiceImpl implements MemberService {
 		this.sqlSessionFactory = sqlSessionFactory;
 	}
 
-	private MemberDAO memDao;
+	private MemberDAO memberDAO;
 
 	public void setMemberDAO(MemberDAO memberDAO) {
-		this.memDao = memberDAO;
-	}
-
-	
-	@Override
-	public List<MemberVO> memberAllListPrint() throws SQLException {
-		List<MemberVO> memList = null;
-		
-		SqlSession session = sqlSessionFactory.openSession();
-		
-		memList = memDao.memberAllListPrint(session);
-		
-		session.close();
-		
-		return memList;
-	}
-
-	@Override
-	public int memberInfoInsert(MemberVO mv) throws SQLException {
-		int cnt = 0;
-		
-		SqlSession session = sqlSessionFactory.openSession();
-		
-		cnt = memDao.memberInfoInsert(session, mv);
-		
-		session.close();
-		
-		return cnt;
-	}
-
-	@Override
-	public int memberInfoUpdate(MemberVO mv) throws SQLException {
-		int cnt = 0;
-		
-		SqlSession session = sqlSessionFactory.openSession();
-		
-		cnt = memDao.memberInfoUpdate(session, mv);
-		
-		session.close();
-		
-		return cnt;
-	}
-
-	@Override
-	public int memberInfoDelete(MemberVO mv) throws SQLException {
-		int cnt = 0;
-		
-		SqlSession session = sqlSessionFactory.openSession();
-		
-		cnt = memDao.memberInfoDelete(session, mv);
-		
-		session.close();
-		
-		return cnt;
-	}
-
-	@Override
-	public MemberVO getMember(String id) throws SQLException {
-		
-		MemberVO mv = null;
-		
-		SqlSession session = sqlSessionFactory.openSession();
-		
-		mv = memDao.selectMemberById(session, id);
-		
-		session.close();
-		
-		return mv;
-		
-	}
-
-	@Override
-	public boolean checkMember(MemberVO mv) throws SQLException {
-		boolean chk = false;
-		
-		SqlSession session = sqlSessionFactory.openSession();
-		
-		chk = memDao.checkMember(session, mv);
-		
-		session.close();
-		
-		return chk;
+		this.memberDAO = memberDAO;
 	}
 
 	@Override
@@ -113,7 +36,7 @@ public class MemberServiceImpl implements MemberService {
 		SqlSession session = sqlSessionFactory.openSession();
 
 		try {
-			MemberVO member = memDao.selectMemberById(session, id);
+			MemberVO member = memberDAO.selectMemberById(session, id);
 			if (member == null)
 				throw new NotFoundIDException();
 			if (!pwd.equals(member.getPwd()))
@@ -122,6 +45,66 @@ public class MemberServiceImpl implements MemberService {
 			session.close();
 		}
 
+	}
+
+	@Override
+	public MemberVO getMember(String id) throws SQLException {
+		SqlSession session = sqlSessionFactory.openSession();
+
+		try {
+
+			MemberVO member = memberDAO.selectMemberById(session, id);
+			return member;
+		} finally {
+			session.close();
+		}
+
+	}
+
+	@Override
+	public List<MemberVO> getMemberList() throws SQLException {
+		SqlSession session = sqlSessionFactory.openSession();
+		
+		try {			
+			List<MemberVO> memList = memberDAO.selectMemberList(session);
+			return memList;
+		} finally {
+			session.close();
+		}
+	}
+
+	@Override
+	public List<MemberVO> getMemberList(Criteria cri) throws SQLException {
+		SqlSession session = sqlSessionFactory.openSession();
+		
+		try {			
+			List<MemberVO> memList = memberDAO.selectMemberList(session,cri);
+			return memList;
+		} finally {
+			session.close();
+		}
+	}
+
+	@Override
+	public Map<String, Object> getMemberList(SearchCriteria cri) throws SQLException {
+		SqlSession session = sqlSessionFactory.openSession();
+		
+		Map<String, Object> dataMap = new HashMap<String, Object>();
+		try {			
+			
+			PageMaker pageMaker = new PageMaker();
+			pageMaker.setCri(cri);
+			pageMaker.setTotalCount(memberDAO.selectMemberListCount(session, cri));
+			
+			List<MemberVO> memList = memberDAO.selectMemberList(session,cri);
+			
+			dataMap.put("memberList", memList);
+			dataMap.put("pageMaker", pageMaker);
+			return dataMap;
+		
+		} finally {
+			session.close();
+		}
 	}
 
 }
