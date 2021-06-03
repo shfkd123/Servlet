@@ -18,39 +18,34 @@ import javax.servlet.http.HttpSession;
 
 import kr.or.ddit.dto.MemberVO;
 
+
 public class LoginCheckFilter implements Filter {
 
 	private List<String> exURLs = new ArrayList<String>();
-
-	@Override
+    
 	public void destroy() {
-
+		// TODO Auto-generated method stub
 	}
-
-	@Override
-	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
-			throws IOException, ServletException {
+	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+		
 		HttpServletRequest httpReq = (HttpServletRequest) request;
 		HttpServletResponse httpResp = (HttpServletResponse) response;
 
 		// 제외할 url 확인
 		String reqUrl = httpReq.getRequestURI().substring(httpReq.getContextPath().length());
-
-//		System.out.println("request URI : " + reqUrl);
 		
-		
-		//url check
-		if(excludeCheck(reqUrl)) { 
+		// url check
+		if (excludeCheck(reqUrl)) {
 			chain.doFilter(request, response);
 			return;
 		}
 
-		//login check
+		// login check
 		HttpSession session = httpReq.getSession();
 		MemberVO loginUser = (MemberVO) session.getAttribute("loginUser");
 		
 		//login 확인
-		if(loginUser == null) { //비로그인 상태
+		if(loginUser==null) { //비로그인 상태
 			httpResp.setContentType("text/html;charset=utf-8");
 			PrintWriter out = httpResp.getWriter();
 			out.println("<script>");
@@ -60,30 +55,30 @@ public class LoginCheckFilter implements Filter {
 					+"/';}else{");
 			out.println("window.parent.location.href='"+httpReq.getContextPath()+"/';");
 			out.println("}");
-			out.println("</script>");
+			out.println("</script>");			
 			out.close();
 		}else { //로그인
-			chain.doFilter(request, response); //통과
+			chain.doFilter(request, response); //통과			
 		}
-
+	
+		
+		//chain.doFilter(request, response);
 	}
-
-	@Override
 	public void init(FilterConfig fConfig) throws ServletException {
-		String excludeURLNames= fConfig.getInitParameter("exclude");
+		String excludeURLNames = fConfig.getInitParameter("exclude");
 		StringTokenizer st = new StringTokenizer(excludeURLNames, ",");
-		while(st.hasMoreTokens()) {
+		while (st.hasMoreTokens()) {
 			exURLs.add(st.nextToken().trim());
 		}
-//		System.out.println(exURLs);
+		//System.out.println(exURLs);
 	}
 	
 	private boolean excludeCheck(String url) {
-		if(url.length() <= 1)
+		if (url.length() <= 1)
 			return true;
-		
-		for(String exURL : exURLs) {
-			if(url.contains(exURL)) {
+
+		for (String exURL : exURLs) {
+			if (url.contains(exURL)) {
 				return true;
 			}
 		}
@@ -91,3 +86,11 @@ public class LoginCheckFilter implements Filter {
 	}
 
 }
+
+
+
+
+
+
+
+

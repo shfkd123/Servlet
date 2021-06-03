@@ -12,21 +12,24 @@ import kr.or.ddit.service.MemberService;
 public class MemberListHandler implements Handler {
 
 	private MemberService memberService;
-	
 	public void setMemberService(MemberService memberService) {
 		this.memberService = memberService;
 	}
 	
-	
 	@Override
 	public String process(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		String url = "member/list";
+		String url="member/list";
 		
-		List<MemberVO> memberList = memberService.getMemberList();
+		List<MemberVO> memberList=memberService.getMemberList();		
 		
-		request.setAttribute("memberList", memberList);
-		
+		request.setAttribute("memberList", memberList);		
 		return url;
 	}
 
 }
+
+
+
+
+
+

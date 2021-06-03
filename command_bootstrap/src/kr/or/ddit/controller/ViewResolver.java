@@ -7,19 +7,20 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class ViewResolver {
-
-	public static void view(HttpServletRequest request, HttpServletResponse response, String url)
-			throws ServletException, IOException {
+	
+	public static void view(HttpServletRequest request, HttpServletResponse response, 
+							String url)	throws ServletException, IOException {
 		if (url == null) {
 			return;
 		}
 
 		if (url.indexOf("redirect:") > -1) {
-			String contextPath = request.getContextPath();
-
-			url = contextPath + "/" + url.replace("redirect:", "");
+			
+			String contextPath=request.getContextPath();
+			
+			url =  contextPath+"/"+url.replace("redirect:", "");
+			
 			response.sendRedirect(url);
-
 		} else {
 			String prefix = "/WEB-INF/views/";
 			String subfix = ".jsp";

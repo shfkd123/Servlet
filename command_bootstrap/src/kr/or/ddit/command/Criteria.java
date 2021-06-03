@@ -1,6 +1,7 @@
 package kr.or.ddit.command;
 
 public class Criteria {
+
 	private int page = 1;
 	private int perPageNum = 10;
 	private int startRowNum;
@@ -29,15 +30,14 @@ public class Criteria {
 	}
 
 	public void setPerPageNum(int perPageNum) {
-		if(perPageNum < 1) this.perPageNum = 1;
-		this.perPageNum = perPageNum;
+		if(perPageNum < 1) perPageNum=1;
+		this.perPageNum=perPageNum;
 	}
-
 	public void setPerPageNum(String perPageNum) {
-		if(perPageNum != null && !perPageNum.isEmpty()) {
+		if(perPageNum!=null && !perPageNum.isEmpty()) {
 			setPerPageNum(Integer.parseInt(perPageNum));
 		}else {
-			this.perPageNum = 10;
+			this.perPageNum=10;			
 		}
 	}
 
@@ -46,17 +46,9 @@ public class Criteria {
 		return this.startRowNum;
 	}
 
-	public void setStartRowNum(int startRowNum) {
-		this.startRowNum = startRowNum;
-	}
-
 	public int getEndRowNum() {
 		this.endRowNum=this.startRowNum+this.perPageNum-1;
 		return this.endRowNum;
-	}
-
-	public void setEndRowNum(int endRowNum) {
-		this.endRowNum = endRowNum;
 	}
 
 }

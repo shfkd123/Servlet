@@ -2,6 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@ page trimDirectiveWhitespaces="true" %>
 <%@ taglib prefix="decorator" uri="http://www.opensymphony.com/sitemesh/decorator" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -17,5 +18,7 @@
 <decorator:body />
 
 <%@ include file="/WEB-INF/views/include/js.jsp" %>
+<script src="/resources/js/common.js" ></script>
 </body>
+
 </html>

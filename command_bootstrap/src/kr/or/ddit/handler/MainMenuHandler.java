@@ -15,27 +15,27 @@ public class MainMenuHandler implements Handler {
 	public void setMenuService(MenuService menuService) {
 		this.menuService = menuService;
 	}
+
+
 	@Override
 	public String process(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		String url = "common/indexPage";
-
+		String url="common/indexPage";
+		
 		String mCode = request.getParameter("mCode");
-
-		if (mCode == null)
-			mCode = "M000000";
-
-		List<MenuVO> menuList;
+		
+		if(mCode ==null) mCode="M000000";
+		
 		try {
-			menuList = menuService.getMainMenuList();
+			List<MenuVO> menuList = menuService.getMainMenuList();			
 			MenuVO menu = menuService.getMenuByMcode(mCode);
-
-			request.setAttribute("menuList", menuList);
-			request.setAttribute("menu", menu);
-		} catch (SQLException e) {
+			
+			request.setAttribute("menuList",menuList);
+			request.setAttribute("menu",menu);
+		} catch (SQLException e) {			
 			e.printStackTrace();
-			url = null;
+			url=null;
 		}
-		return url; //직접 forward나 redirect를 하지 않고  url만 던진다.
+		return url;
 	}
 
 }

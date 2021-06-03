@@ -34,12 +34,11 @@ function OpenWindow(UrlStr, WinTitle, WinWidth, WinHeight) {
 }
 
 //팝업창 닫기
-function CloseWindow() {
-	window.opener.location.reload(true);
-	window.close();
-}
-
 function CloseWindow(parentURL) {
-	window.opener.parent.location.href=parentURL;
+	if(parentURL){
+		window.opener.parent.location.href=parentURL;		
+	}else{
+		window.opener.location.reload(true);
+	}
 	window.close();
 }

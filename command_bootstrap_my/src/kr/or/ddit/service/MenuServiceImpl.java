@@ -72,4 +72,15 @@ public class MenuServiceImpl implements MenuService {
 		return menu;
 	}
 
+	@Override
+	public MenuVO getMenuByMname(String mName) throws SQLException {
+		SqlSession session = sqlSessionFactory.openSession();
+		
+		MenuVO menu = menuDAO.selectMenuByMname(session, mName);
+		
+		session.close();
+		
+		return menu;
+	}
+
 }

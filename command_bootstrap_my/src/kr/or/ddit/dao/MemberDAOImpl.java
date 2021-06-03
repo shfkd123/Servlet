@@ -51,4 +51,10 @@ public class MemberDAOImpl implements MemberDAO {
 		return count;
 	}
 
+	@Override
+	public void insertMember(SqlSession session, MemberVO member) throws SQLException {
+		session.update("Member-Mapper.insertMember", member);
+		
+	}
+
 }

@@ -4,11 +4,11 @@ import java.util.Date;
 
 public class AttachVO {
 	
-	private int ano; //attach 파일의 primary 키
+	private int ano;
 	private String uploadPath;
 	private String fileName;
 	private String fileType;
-	private int pno; //pds(자료실)파일의 primary 키
+	private int pno;
 	private String attacher;
 	private Date regDate;
 	
@@ -55,7 +55,6 @@ public class AttachVO {
 	public void setRegDate(Date regDate) {
 		this.regDate = regDate;
 	}
-
 	
 	
 }

@@ -12,25 +12,28 @@ import kr.or.ddit.dto.MenuVO;
 import kr.or.ddit.mybatis.OracleMyBatisSqlSessionFactory;
 
 public class MenuServiceImpl implements MenuService {
+	
 
-	private MenuDAO menuDAO; // = new MenuDAOImpl();
+	private MenuDAO menuDAO;// = new MenuDAOImpl();
 	public void setMenuDAO(MenuDAO menuDAO) {
 		this.menuDAO = menuDAO;
 	}
 	
-	private SqlSessionFactory sqlSessionFactory; //= new OracleMyBatisSqlSessionFactory();
-	//SqlSessionFactory가 바뀔때 setSqlSessionFactory로 바꿔준다.
+	private SqlSessionFactory sqlSessionFactory;// = new OracleMyBatisSqlSessionFactory();
 	public void setSqlSessionFactory(SqlSessionFactory sqlSessionFactory) {
 		this.sqlSessionFactory = sqlSessionFactory;
 	}
 	
+	
 	@Override
 	public List<MenuVO> getMainMenuList() throws SQLException {
-		List<MenuVO> menuList = null;
-		SqlSession session = sqlSessionFactory.openSession(false); //Session을 자체적으로 커밋과 롤백의 권한을 빼앗기위해 false
+				
+		List<MenuVO> menuList= null;
+		SqlSession session = sqlSessionFactory.openSession(false);
 		
 		try {
-			menuList = menuDAO.selectMainMenu(session);
+			
+			menuList =menuDAO.selectMainMenu(session);		
 			
 			session.commit();
 		}catch(SQLException e) {
@@ -42,18 +45,16 @@ public class MenuServiceImpl implements MenuService {
 			session.close();
 		}
 		
+		
 		return menuList;
 	}
 
 	@Override
 	public List<MenuVO> getSubMenuList(String mCode) throws SQLException {
+		List<MenuVO> menuList= null;
 		
-		List<MenuVO> menuList = null;
-		
-		SqlSession session = sqlSessionFactory.openSession(); //자체적으로 커밋하고 문제가 터지면 롤백하기때문에 false를 주지 않았다.
-		
-		menuList = menuDAO.selectSubMenu(session, mCode);
-		
+		SqlSession session = sqlSessionFactory.openSession();
+		menuList =menuDAO.selectSubMenu(session, mCode);		
 		session.close();
 		
 		return menuList;
@@ -61,15 +62,33 @@ public class MenuServiceImpl implements MenuService {
 
 	@Override
 	public MenuVO getMenuByMcode(String mCode) throws SQLException {
-		MenuVO menu = null;
+		MenuVO menu= null;
 		
 		SqlSession session = sqlSessionFactory.openSession();
+		menu =menuDAO.selectMenuByMcode(session, mCode);
+		session.close();
 		
-		menu = menuDAO.selectMenuByMcode(session, mCode);
+		return menu;
+	}
+
+
+	@Override
+	public MenuVO getMenuByMname(String mName) throws SQLException {
+		MenuVO menu= null;
 		
+		SqlSession session = sqlSessionFactory.openSession();
+		menu =menuDAO.selectMenuByMname(session, mName);
 		session.close();
 		
 		return menu;
 	}
 
 }
+
+
+
+
+
+
+
+		

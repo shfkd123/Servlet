@@ -22,6 +22,8 @@ public interface MemberDAO {
 	//검색 결과의 전체 리스트 개수
 	int selectMemberListCount(SqlSession session, SearchCriteria cri) throws SQLException;
 	
+	//회원 등록
+	public void insertMember(SqlSession session, MemberVO member) throws SQLException; 
 	
 	
 	

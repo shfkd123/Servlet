@@ -9,27 +9,27 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="picture_go" key="selection"/>
+		<item value="" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="idCheck"/>
+			<item value="idCheck_go"/>
+			<item value="checkedID"/>
+			<item value="input_ID"/>
+			<item value="js"/>
+			<item value="index.js"/>
+			<item value="index"/>
+			<item value="common"/>
+			<item value="등록"/>
+			<item value="role"/>
+			<item value="업로드"/>
+			<item value="inputFileName"/>
 			<item value="picture_go"/>
 			<item value="picture_go();"/>
 			<item value="picture.do"/>
-			<item value="picture"/>
-			<item value="스파이시 이탈리안 단품"/>
-			<item value="oldfile"/>
-			<item value="old"/>
-			<item value="MemberListSearchPageHandler"/>
-			<item value="perPageNum"/>
-			<item value="// TODO Auto-generated method stub"/>
-			<item value="button"/>
-			<item value="selectMemberById"/>
-			<item value="MemManage"/>
-			<item value="MemberManagementVO"/>
-			<item value="MemberManagementDAO"/>
 		</list>
 		<list key="replacehistory">
 			<item value="MemberListSearchPageHandler"/>

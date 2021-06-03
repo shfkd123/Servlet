@@ -16,25 +16,23 @@ import kr.or.ddit.dto.MemberVO;
 import kr.or.ddit.exception.InvalidPasswordException;
 import kr.or.ddit.exception.NotFoundIDException;
 
-public class MemberServiceImpl implements MemberService {
-
+public class MemberServiceImpl implements MemberService{
+	
 	private SqlSessionFactory sqlSessionFactory;
-
 	public void setSqlSessionFactory(SqlSessionFactory sqlSessionFactory) {
 		this.sqlSessionFactory = sqlSessionFactory;
 	}
 
 	private MemberDAO memberDAO;
-
 	public void setMemberDAO(MemberDAO memberDAO) {
 		this.memberDAO = memberDAO;
 	}
+	
 
 	@Override
-	public void login(String id, String pwd) throws SQLException, NotFoundIDException, InvalidPasswordException {
-
+	public void login(String id, String pwd) throws SQLException, NotFoundIDException,
+												InvalidPasswordException {
 		SqlSession session = sqlSessionFactory.openSession();
-
 		try {
 			MemberVO member = memberDAO.selectMemberById(session, id);
 			if (member == null)
@@ -46,11 +44,10 @@ public class MemberServiceImpl implements MemberService {
 		}
 
 	}
-
+	
 	@Override
 	public MemberVO getMember(String id) throws SQLException {
 		SqlSession session = sqlSessionFactory.openSession();
-
 		try {
 
 			MemberVO member = memberDAO.selectMemberById(session, id);
@@ -58,53 +55,72 @@ public class MemberServiceImpl implements MemberService {
 		} finally {
 			session.close();
 		}
-
 	}
+
 
 	@Override
 	public List<MemberVO> getMemberList() throws SQLException {
 		SqlSession session = sqlSessionFactory.openSession();
-		
-		try {			
-			List<MemberVO> memList = memberDAO.selectMemberList(session);
-			return memList;
-		} finally {
+		try {
+			List<MemberVO> memberList = memberDAO.selectMemberList(session);
+			return memberList;
+		}finally {
 			session.close();
 		}
 	}
+
 
 	@Override
 	public List<MemberVO> getMemberList(Criteria cri) throws SQLException {
 		SqlSession session = sqlSessionFactory.openSession();
-		
 		try {			
-			List<MemberVO> memList = memberDAO.selectMemberList(session,cri);
-			return memList;
-		} finally {
+			List<MemberVO> memberList = memberDAO.selectMemberList(session,cri);
+			return memberList;
+		}finally {
 			session.close();
 		}
 	}
 
+
 	@Override
-	public Map<String, Object> getMemberList(SearchCriteria cri) throws SQLException {
+	public Map<String,Object> getMemberList(SearchCriteria cri) throws SQLException {
 		SqlSession session = sqlSessionFactory.openSession();
 		
-		Map<String, Object> dataMap = new HashMap<String, Object>();
+		Map<String,Object> dataMap = new HashMap<String,Object>();
+		
 		try {			
-			
 			PageMaker pageMaker = new PageMaker();
 			pageMaker.setCri(cri);
 			pageMaker.setTotalCount(memberDAO.selectMemberListCount(session, cri));
 			
-			List<MemberVO> memList = memberDAO.selectMemberList(session,cri);
+			List<MemberVO> memberList = memberDAO.selectMemberList(session,cri);
 			
-			dataMap.put("memberList", memList);
+			dataMap.put("memberList", memberList);
 			dataMap.put("pageMaker", pageMaker);
+			
 			return dataMap;
-		
+		}finally {
+			session.close();
+		}
+	}
+
+
+	@Override
+	public void regist(MemberVO member) throws SQLException {
+		SqlSession session = sqlSessionFactory.openSession();
+		try {
+
+			memberDAO.insertMember(session, member);
 		} finally {
 			session.close();
 		}
 	}
 
 }
+
+
+
+
+
+
+
