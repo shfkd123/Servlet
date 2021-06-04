@@ -23,7 +23,10 @@ public interface MemberDAO {
 	int selectMemberListCount(SqlSession session, SearchCriteria cri) throws SQLException;
 	
 	//회원 등록
-	public void insertMember(SqlSession session, MemberVO member) throws SQLException; 
+	public void insertMember(SqlSession session, MemberVO member) throws SQLException;
+	
+	//회원 수정
+	public void modifyMember(SqlSession session, MemberVO member) throws SQLException;
 	
 	
 	

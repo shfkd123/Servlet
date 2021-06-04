@@ -118,4 +118,15 @@ public class MemberServiceImpl implements MemberService {
 		
 	}
 
+	@Override
+	public void modify(MemberVO member) throws SQLException {
+		SqlSession session = sqlSessionFactory.openSession();
+		try {
+			memberDAO.modifyMember(session, member);
+		} finally {
+			session.close();
+		}
+		
+	}
+
 }

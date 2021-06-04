@@ -9,12 +9,16 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="" key="selection"/>
+		<item value="data-id" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="data-id"/>
+			<item value="session"/>
+			<item value="multi"/>
+			<item value="null"/>
 			<item value="idCheck"/>
 			<item value="idCheck_go"/>
 			<item value="checkedID"/>
@@ -26,12 +30,9 @@
 			<item value="등록"/>
 			<item value="role"/>
 			<item value="업로드"/>
-			<item value="inputFileName"/>
-			<item value="picture_go"/>
-			<item value="picture_go();"/>
-			<item value="picture.do"/>
 		</list>
 		<list key="replacehistory">
+			<item value="multiReq"/>
 			<item value="MemberListSearchPageHandler"/>
 			<item value=""/>
 			<item value="Member-Mapper"/>

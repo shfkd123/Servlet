@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
 <typeInfo handle="=MyServlet_MyBatis/src&lt;kr.or.ddit.service{MemberManagementService.java[MemberManagementService" modifiers="513" timestamp="1621944525297"/>
+<typeInfo handle="=command_bootstrap/src&lt;kr.or.ddit.handler{Handler.java[Handler" modifiers="513" timestamp="1622092810000"/>
+<typeInfo handle="=command_bootstrap/D:\/B_Util\/2.Java\/jdk 1.8\/jre\/lib\/rt.jar&lt;com.sun.corba.se.impl.ior(Handler.class[Handler" modifiers="1536" timestamp="1610359322136"/>
 </typeInfoHistroy>
