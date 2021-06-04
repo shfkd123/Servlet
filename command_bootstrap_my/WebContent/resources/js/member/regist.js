@@ -19,7 +19,7 @@ function picture_go(){
    //유효성 체크 :이미지 확장자 jpg 확인
    if(!(fileFormat=="JPG" || fileFormat=="JPEG")){
       alert("이미지는 jpg/jpeg 형식만 가능합니다.");
-      picture.value="";      
+      picture.value("");      
       return;
    } 
    

@@ -42,3 +42,12 @@ function CloseWindow(parentURL) {
 	}
 	window.close();
 }
+
+//사용자 사진 미리보기
+function MemberPictureThumb(targetObj, fileName){ //(대상, 이미지 파일명)
+	targetObj.style.backgroundImage="url('getPicture.do?picture="+fileName+"')";
+	targetObj.style.backgroundPosition="center";
+	targetObj.style.backgroundRepeat="no-repeat";
+	targetObj.style.backgroundSize="cover";
+	
+}

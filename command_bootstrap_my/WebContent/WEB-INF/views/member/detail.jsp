@@ -39,7 +39,7 @@
 	        	<div class="register-card-body" >
 	            	<div class="row"  style="height:200px;">
 						<div class="mailbox-attachments clearfix col-md-12" style="text-align: center;">							
-							<div id="pictureView" style="border: 1px solid green; height: 200px; width: 140px; margin: 0 auto;"></div>														
+							<div id="pictureView" data-id="${member.id }" style="border: 1px solid green; height: 200px; width: 140px; margin: 0 auto;"></div>														
 						</div>
 					</div>
 					<br />
@@ -88,7 +88,7 @@
 			          		</div>
 			          	
 			          		<div class="col-sm-3 text-center">
-			            		<button type="button" id="listBtn" onclick="" class="btn btn-primary pull-right">닫 기</button>
+			            		<button type="button" id="listBtn" onclick="CloseWindow();" class="btn btn-primary pull-right">닫 기</button>
 			            	</div>
 		          	    </div>  	
 		          </div>
@@ -98,4 +98,8 @@
     <!-- /.content -->
   </div>
   <!-- /.content-wrapper -->
-
+<script>
+window.onload=function(){
+	MemberPictureThumb(document.querySelector('[data-id="${member.id}"]'),'${member.picture}');
+}
+</script>  
