@@ -1,13 +1,11 @@
 package kr.or.ddit.handler.member;
 
-import java.util.List;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import kr.or.ddit.command.SearchCriteria;
-import kr.or.ddit.dto.MemberVO;
 import kr.or.ddit.handler.Handler;
 import kr.or.ddit.service.MemberService;
 

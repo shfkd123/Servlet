@@ -36,7 +36,7 @@ function CloseWindow(parentURL){
 	if(parentURL){
 		window.opener.parent.location.href=parentURL;
 	}else{
-		window.opener.location.reload(true);	
+		window.opener.parent.location.reload(true);	
 	}
 	window.close();
 }
@@ -50,7 +50,4 @@ function MemberPictureThumb(targetObj, fileName){ //(대상, 이미지파일명)
 	targetObj.style.backgroundRepeat="no-repeat";
 	targetObj.style.backgroundSize="cover";
 }
-	
-
-
 

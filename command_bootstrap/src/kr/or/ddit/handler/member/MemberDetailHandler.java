@@ -20,8 +20,7 @@ public class MemberDetailHandler implements Handler {
 	@Override
 	public String process(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		String url="member/detail";
-		
-
+	
 		String id = request.getParameter("id");
 
 		MemberVO member = null;

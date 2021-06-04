@@ -81,7 +81,7 @@
 		          		
 			          		<div class="col-sm-3 text-center">
 			          			<button type="button" onclick="location.href='remove.do?id=${member.id}';" 
-			          			id="deleteBtn" class="btn btn-danger" >삭 제</button>
+			          			id="deleteBtn" class="btn btn-danger">삭 제</button>
 			          		</div>
 			          		<div class="col-sm-3 text-center">
 			          			<button type="button" id="stopBtn" class="btn btn-info" >정 지</button>

@@ -33,6 +33,7 @@ function picture_go(){
    
 
    if (picture.files && picture.files[0]) {//(1) 파일이 선택되어 있는지 확인
+	   //일단 picture.files가 있는지, 그리고 그 pictur.files[0]가 있는지 
       var reader = new FileReader();//(2) 있으면 FileReader 생성
        reader.onload = function (e) {
            $('div#pictureView')
