@@ -63,4 +63,22 @@ public class MemberDAOImpl implements MemberDAO {
 		
 	}
 
+	@Override
+	public void deleteMember(SqlSession session, String id) throws SQLException {
+		session.update("Member-Mapper.deleteMember", id);
+		
+	}
+
+	@Override
+	public void disabledMember(SqlSession session, String id) throws SQLException {
+		session.update("Member-Mapper.disabledMember", id);
+		
+	}
+
+	@Override
+	public void enabledMember(SqlSession session, String id) throws SQLException {
+		session.update("Member-Mapper.enabledMember", id);
+		
+	}
+
 }

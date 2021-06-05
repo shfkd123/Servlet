@@ -38,7 +38,7 @@ function CloseWindow(parentURL) {
 	if(parentURL){
 		window.opener.parent.location.href=parentURL;		
 	}else{
-		window.opener.location.reload(true);
+		window.opener.parent.location.reload(true);
 	}
 	window.close();
 }

@@ -56,7 +56,7 @@
    <update id="updateMember" parameterType="member">
    		update member
    		set
-   		pwd = #{pwd}
+   		pwd = #{pwd},
    		email = #{email},
    		phone = #{phone},
    		name = #{name},
@@ -67,6 +67,22 @@
    		</if>
    		
    		where id=#{id}
+   </update>
+   
+   <update id="deleteMember" parameterType="member">
+  		delete from member where id = #{id} 
+   </update>
+
+   <update id="disabledMember" parameterType="member">
+  		update member
+  		set enabled = 0
+  		where id = #{id} 
+   </update>
+
+   <update id="enabledMember" parameterType="member">
+  		update member
+  		set enabled = 1
+  		where id = #{id} 
    </update>
 
 </mapper>

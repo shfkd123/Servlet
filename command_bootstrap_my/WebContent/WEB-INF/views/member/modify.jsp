@@ -97,12 +97,12 @@
 				<div class="form-group row">
                   <label for="phone" class="col-sm-3 control-label text-center">전화번호</label>
                   <div class="col-sm-9">   
-                  	<input name="phone" type="text" class="form-control" id="inputPassword3" value="">	                
+                  	<input name="phone" type="text" class="form-control" id="inputPassword3" value="${member.phone }">	                
                   </div>                  
                 </div>  
 				
 				<div class="card-footer row" style="margin-top: 0; border-top: none;">						
-					<button type="button" id="modifyBtn"  onclick=""
+					<button type="button" id="modifyBtn"  onclick="modify_go();"
 						class="btn btn-warning col-sm-4 text-center" >수정하기</button>
 					<div class="col-sm-4"></div>
 					<button type="button" id="cancelBtn" onclick=""
@@ -158,10 +158,10 @@ function changePicture_go(){
 	//이미지 변경 확인
 	$('input[name="uploadPicture"]').val(picture.files[0].name);
 
-	//회원 수정 submit
-	function modify_go(){
-		var form=$('form[role="form"]');
-		form.submit();
-	}
+}
+//회원 수정 submit
+function modify_go(){
+	var form=$('form[role="form"]');
+	form.submit();
 }
 </script>
