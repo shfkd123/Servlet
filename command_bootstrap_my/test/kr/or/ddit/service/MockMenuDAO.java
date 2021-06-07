@@ -52,4 +52,10 @@ public class MockMenuDAO implements MenuDAO {
 		}
 		return menu;
 	}
+
+	@Override
+	public MenuVO selectMenuByMname(SqlSession session, String mName) throws SQLException {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

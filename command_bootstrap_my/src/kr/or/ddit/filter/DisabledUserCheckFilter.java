@@ -41,20 +41,16 @@ public class DisabledUserCheckFilter implements Filter{
 		
 //		//제외할 url 확인
 //		String reqUrl = httpReq.getRequestURI().substring(httpReq.getContextPath().length());
-		
-		String reqUserEnabledState = request.getParameter("enabled");
-		
-		//disabled 상태 확인
-		if(UserStateCheck(reqUserEnabledState)) {
-			chain.doFilter(request, response);
-			return;
-		}
-		
+			
 		//login check
 		HttpSession session = httpReq.getSession();
 		MemberVO loginUser = (MemberVO) session.getAttribute("loginUser");
-		
-		if(loginUser != null) {
+
+		//disabled 상태 확인
+		if(!UserStateCheck(loginUser.getEnabled())) {
+			chain.doFilter(request, response);
+			return;
+		}else {
 			httpResp.setContentType("text/html;charset=utf-8");
 			PrintWriter out = httpResp.getWriter();
 			out.println("<script>");
@@ -62,20 +58,19 @@ public class DisabledUserCheckFilter implements Filter{
 			out.println("window.parent.location.href='/index.do';");
 			out.println("</script>");
 			out.close();
-		}else { //로그인
-			chain.doFilter(request, response); //통과
 		}
 	}
 
 
 	@Override
 	public void init(FilterConfig filterConfig) throws ServletException {
-		String excludeURLNames= filterConfig.getInitParameter("UserDisabled");
+		//String excludeURLNames= filterConfig.getInitParameter("UserDisabled");
+		System.out.println("필터가 준비되었다.");
 	}
 	
-	private boolean UserStateCheck(String reqUserEnabledState) {
+	private boolean UserStateCheck(int reqUserEnabledState) {
 		
-		if(reqUserEnabledState == "0")
+		if(reqUserEnabledState == 0)
 			return true;
 		
 		return false;

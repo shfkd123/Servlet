@@ -51,3 +51,6 @@
 5월 29, 2021 14:15:38.88 [2588:14772:0529/141538.889:ERROR:device_event_log_impl.cc(214)] [14:15:38.889] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
 5월 29, 2021 14:17:27.20 [2588:14772:0529/141727.202:ERROR:CONSOLE(0)] "TypeError: Cannot read property '__widget' of null", source:  (0)
 5월 29, 2021 14:34:19.42 [12140:11496:0529/143419.424:ERROR:device_event_log_impl.cc(214)] [14:34:19.424] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
+
+6월 07, 2021 21:31:25.94 NEW SESSION
+6월 07, 2021 21:31:25.94 [6720:16524:0607/213125.945:ERROR:device_event_log_impl.cc(214)] [21:31:25.945] Bluetooth: bluetooth_adapter_winrt.cc:1072 Getting Default Adapter failed.
