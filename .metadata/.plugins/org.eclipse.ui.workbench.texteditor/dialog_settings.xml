@@ -15,24 +15,25 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="member.id"/>
+			<item value="selectMemberById"/>
+			<item value="registForm"/>
+			<item value="notice"/>
 			<item value="// TODO Auto-generated method stub"/>
+			<item value="viewcnt"/>
+			<item value="selectSearchNoticeListCount"/>
+			<item value="selectSearchNoticeList"/>
+			<item value="member"/>
 			<item value="null"/>
 			<item value="data-id"/>
 			<item value="session"/>
 			<item value="multi"/>
 			<item value="idCheck"/>
 			<item value="idCheck_go"/>
-			<item value="checkedID"/>
-			<item value="input_ID"/>
-			<item value="js"/>
-			<item value="index.js"/>
-			<item value="index"/>
-			<item value="common"/>
-			<item value="등록"/>
-			<item value="role"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>
+			<item value="viewCnt"/>
 			<item value="multiReq"/>
 			<item value="MemberListSearchPageHandler"/>
 			<item value="Member-Mapper"/>
@@ -50,7 +51,7 @@
 		<item value="288" key="DIALOG_WIDTH"/>
 		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
 		<item value="376" key="DIALOG_HEIGHT"/>
-		<item value="1241" key="DIALOG_X_ORIGIN"/>
+		<item value="671" key="DIALOG_X_ORIGIN"/>
 		<item value="400" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

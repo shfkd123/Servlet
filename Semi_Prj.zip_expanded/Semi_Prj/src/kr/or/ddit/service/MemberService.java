@@ -18,12 +18,7 @@ public interface MemberService {
 	
 	// 회원정보조회
 	MemberVO getMember(String id) throws SQLException;
-	
-	// 회원리스트조회
-	List<MemberVO> getMemberList()throws SQLException;
-	List<MemberVO> getMemberList(Criteria cri)throws SQLException;
-	Map<String,Object> getMemberList(SearchCriteria cri)throws SQLException;
-	
+		
 	//회원등록
 	public void regist(MemberVO member) throws SQLException;
 	

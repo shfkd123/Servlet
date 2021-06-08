@@ -10,5 +10,10 @@
 <script src="<%=request.getContextPath()%>/resources/bootstrap/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="<%=request.getContextPath()%>/resources/bootstrap/dist/js/adminlte.min.js"></script>
+<!-- summernote Editor -->
+<script src="<%=request.getContextPath() %>/resources/bootstrap/plugins/summernote/summernote.min.js"></script>
+
+
 <!-- jquery cookie -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+

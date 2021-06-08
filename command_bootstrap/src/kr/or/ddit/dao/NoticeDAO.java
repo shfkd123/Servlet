@@ -21,4 +21,13 @@ public interface NoticeDAO {
    
    // Notice_seq.nextval 가져오기
    int selectNoticeSequenceNextValue(SqlSession session) throws SQLException;
+   
+   //공지사항 등록
+   void insertNotice(SqlSession session, NoticeVO notice) throws SQLException;
+   
+   //공지사항 수정
+   void modifyNotice(SqlSession session, NoticeVO notice) throws SQLException;
+   
+   //공지사항 삭제
+   void deleteNotice(SqlSession session, int nno) throws SQLException;
 }

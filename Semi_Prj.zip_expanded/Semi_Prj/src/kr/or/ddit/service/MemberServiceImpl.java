@@ -57,54 +57,6 @@ public class MemberServiceImpl implements MemberService{
 		}
 	}
 
-
-	@Override
-	public List<MemberVO> getMemberList() throws SQLException {
-		SqlSession session = sqlSessionFactory.openSession();
-		try {
-			List<MemberVO> memberList = memberDAO.selectMemberList(session);
-			return memberList;
-		}finally {
-			session.close();
-		}
-	}
-
-
-	@Override
-	public List<MemberVO> getMemberList(Criteria cri) throws SQLException {
-		SqlSession session = sqlSessionFactory.openSession();
-		try {			
-			List<MemberVO> memberList = memberDAO.selectMemberList(session,cri);
-			return memberList;
-		}finally {
-			session.close();
-		}
-	}
-
-
-	@Override
-	public Map<String,Object> getMemberList(SearchCriteria cri) throws SQLException {
-		SqlSession session = sqlSessionFactory.openSession();
-		
-		Map<String,Object> dataMap = new HashMap<String,Object>();
-		
-		try {			
-			PageMaker pageMaker = new PageMaker();
-			pageMaker.setCri(cri);
-			pageMaker.setTotalCount(memberDAO.selectMemberListCount(session, cri));
-			
-			List<MemberVO> memberList = memberDAO.selectMemberList(session,cri);
-			
-			dataMap.put("memberList", memberList);
-			dataMap.put("pageMaker", pageMaker);
-			
-			return dataMap;
-		}finally {
-			session.close();
-		}
-	}
-
-
 	@Override
 	public void regist(MemberVO member) throws SQLException {
 		SqlSession session = sqlSessionFactory.openSession();

@@ -19,14 +19,20 @@
 		</list>
 	</section>
 	<section name="NewWizardAction">
-		<item value="org.eclipse.jst.jsp.ui.internal.wizard.NewJSPWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<item value="org.eclipse.wst.xml.ui.internal.wizards.NewXMLWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="org.eclipse.wst.web.ui"/>
+			<item value="org.eclipse.jpt.dbws"/>
+			<item value="org.eclipse.emf.codegen.ecore.ui.wizardCategory"/>
+			<item value="net.harawata.mybatipse.wizard.mybatisCategory"/>
+			<item value="org.eclipse.jst.ws.ui.new"/>
+			<item value="org.eclipse.wst.XMLCategory"/>
+			<item value="org.eclipse.ui.Examples"/>
+			<item value="org.eclipse.ui.Examples/org.eclipse.wst.xml.examples"/>
 		</list>
 	</section>
 	<section name="ImportExportAction">
 		<item value="org.eclipse.ui.wizards.export.ZipFile" key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID"/>
-		<item value="org.eclipse.ui.wizards.import.ExternalProject" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<item value="org.eclipse.e4.ui.importer.wizard" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
 		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
 			<item value="org.eclipse.ui.Basic"/>
 		</list>
@@ -34,10 +40,14 @@
 			<item value="org.eclipse.ui.Basic"/>
 		</list>
 	</section>
+	<section name="ZipFileImportWizard">
+	</section>
 	<section name="ZipFileExportWizard">
 		<item value="true" key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID"/>
 		<item value="true" key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\pc24\Desktop\servlet_JSP 수업\0608_command_bootstrap.zip"/>
+			<item value="C:\Users\pc24\Desktop\0607_command_bootstrap.zip"/>
 			<item value="C:\Users\pc24\Desktop\0605_command_bootstrap.zip"/>
 			<item value="C:\Users\pc24\Desktop\0604_command_bootstrap.zip"/>
 			<item value="C:\Users\pc24\Desktop\0603_command_bootstrap.zip"/>

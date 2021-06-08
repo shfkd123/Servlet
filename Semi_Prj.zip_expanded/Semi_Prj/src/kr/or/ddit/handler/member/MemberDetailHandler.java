@@ -4,6 +4,7 @@ import java.sql.SQLException;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import kr.or.ddit.dto.MemberVO;
 import kr.or.ddit.handler.Handler;
@@ -19,14 +20,18 @@ public class MemberDetailHandler implements Handler {
 	
 	@Override
 	public String process(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		String url="member/detail";
+		
+		HttpSession session = request.getSession();
+		MemberVO loginUser = (MemberVO) session.getAttribute("loginUser");
+		
+		//String id = request.getParameter("id");
+		
+		String url="member/detail?id="+ loginUser.getId();
 	
-		String id = request.getParameter("id");
-
 		MemberVO member = null;
 		
 		try {
-			member = memberService.getMember(id);
+			member = memberService.getMember(loginUser.getId());
 			request.setAttribute("member", member);
 		} catch (SQLException e) {
 			e.printStackTrace();
