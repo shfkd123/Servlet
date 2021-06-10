@@ -18,10 +18,10 @@
   <footer class="main-footer">
     <!-- To the right -->
     <div class="float-right d-none d-sm-inline">
-      Anything you want
+      Semi_Project
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2021.01.11-2021.08.24 <a href="https://adminlte.io">대덕인재개발원</a>.</strong> TEAM2
   </footer>
 
 

@@ -85,16 +85,16 @@
 							</div>
 							
 						</div>		
-						<div class="form-group row">
-							<label for="authority" class="col-sm-3" style="font-size:0.9em;" >권 한</label>
-							<div class="col-sm-9">
-								<select name="authority" class="form-control" style="font-size:0.9em;">
-									<option value="ROLE_USER">사용자</option>
-									<option value="ROLE_MANAGER">운영자</option>
-									<option value="ROLE_ADMIN">관리자</option>
-								</select>
-							</div>
-						</div>					
+<!-- 						<div class="form-group row"> -->
+<!-- 							<label for="authority" class="col-sm-3" style="font-size:0.9em;" >권 한</label> -->
+<!-- 							<div class="col-sm-9"> -->
+<!-- 								<select name="authority" class="form-control" style="font-size:0.9em;"> -->
+<!-- 									<option value="ROLE_USER">사용자</option> -->
+<!-- 									<option value="ROLE_MANAGER">운영자</option> -->
+<!-- 									<option value="ROLE_ADMIN">관리자</option> -->
+<!-- 								</select> -->
+<!-- 							</div> -->
+<!-- 						</div>					 -->
 						<div class="form-group row">
 							<label for="email" class="col-sm-3" style="font-size:0.9em;">이메일</label>
 							<div class="col-sm-9 input-group-sm">
@@ -102,24 +102,24 @@
 										placeholder="example@naver.com">
 							</div>
 						</div>
-						<div class="form-group row">
-							<label for="phone" class="col-sm-3 control-label">전화번호</label>
-							<div class="col-sm-9">	
-								<div class="input-group-sm">
-									<select style="width:75px;" name="phone" id="phone" class="form-control float-left">
-										<option value="">-선택-</option>
-										<option value="010">010</option>
-										<option value="011">011</option>
-										<option value="017">017</option>
-										<option value="018">018</option>
-									</select>							
-									<label class="float-left" style="padding: 0; text-align: center;">&nbsp;-&nbsp;</label>										
-									<input style="width:68px;" name="phone" type="text" class="form-control float-left" />
-									<label class="float-left" style="padding: 0; text-align: center;">&nbsp;-</label>
-									<input style="width:68px;" name="phone" type="text" class="form-control float-right" />						
-								</div>
-							</div>
-						</div>
+<!-- 						<div class="form-group row"> -->
+<!-- 							<label for="phone" class="col-sm-3 control-label">전화번호</label> -->
+<!-- 							<div class="col-sm-9">	 -->
+<!-- 								<div class="input-group-sm"> -->
+<!-- 									<select style="width:75px;" name="phone" id="phone" class="form-control float-left"> -->
+<!-- 										<option value="">-선택-</option> -->
+<!-- 										<option value="010">010</option> -->
+<!-- 										<option value="011">011</option> -->
+<!-- 										<option value="017">017</option> -->
+<!-- 										<option value="018">018</option> -->
+<!-- 									</select>							 -->
+<!-- 									<label class="float-left" style="padding: 0; text-align: center;">&nbsp;-&nbsp;</label>										 -->
+<!-- 									<input style="width:68px;" name="phone" type="text" class="form-control float-left" /> -->
+<!-- 									<label class="float-left" style="padding: 0; text-align: center;">&nbsp;-</label> -->
+<!-- 									<input style="width:68px;" name="phone" type="text" class="form-control float-right" />						 -->
+<!-- 								</div> -->
+<!-- 							</div> -->
+<!-- 						</div> -->
 						
 						<div class="card-footer">
 							<div class="row">								
@@ -153,15 +153,3 @@
 <script src="/resources/js/member/regist.js" ></script>
 
 </body>
-
-
-
-
-
-
-
-
-
-
-
-

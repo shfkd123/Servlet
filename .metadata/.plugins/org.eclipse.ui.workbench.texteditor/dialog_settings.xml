@@ -9,30 +9,32 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="" key="selection"/>
+		<item value="Null" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="null"/>
+			<item value=":"/>
+			<item value="// TODO Auto-generated method stub"/>
+			<item value="notice"/>
+			<item value="nno"/>
+			<item value="registForm"/>
 			<item value="member.id"/>
 			<item value="selectMemberById"/>
-			<item value="registForm"/>
-			<item value="notice"/>
-			<item value="// TODO Auto-generated method stub"/>
 			<item value="viewcnt"/>
 			<item value="selectSearchNoticeListCount"/>
 			<item value="selectSearchNoticeList"/>
 			<item value="member"/>
-			<item value="null"/>
 			<item value="data-id"/>
 			<item value="session"/>
 			<item value="multi"/>
-			<item value="idCheck"/>
-			<item value="idCheck_go"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>
+			<item value="bno"/>
+			<item value="board"/>
 			<item value="viewCnt"/>
 			<item value="multiReq"/>
 			<item value="MemberListSearchPageHandler"/>

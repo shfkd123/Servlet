@@ -34,6 +34,8 @@ public class LoginCheckFilter implements Filter {
 		// 제외할 url 확인
 		String reqUrl = httpReq.getRequestURI().substring(httpReq.getContextPath().length());
 		
+		System.out.println(reqUrl);
+		
 		// url check
 		if (excludeCheck(reqUrl)) {
 			chain.doFilter(request, response);

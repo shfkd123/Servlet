@@ -22,16 +22,15 @@ public class MemberDetailHandler implements Handler {
 	public String process(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		
 		HttpSession session = request.getSession();
-		MemberVO loginUser = (MemberVO) session.getAttribute("loginUser");
+		MemberVO loginUser = (MemberVO) session.getAttribute("loginUser");		
+		String id = loginUser.getId();
 		
-		//String id = request.getParameter("id");
-		
-		String url="member/detail?id="+ loginUser.getId();
-	
+		String url="member/detail";
+//		System.out.println(loginUser.getId());
 		MemberVO member = null;
 		
 		try {
-			member = memberService.getMember(loginUser.getId());
+			member = memberService.getMember(id);
 			request.setAttribute("member", member);
 		} catch (SQLException e) {
 			e.printStackTrace();

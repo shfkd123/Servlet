@@ -36,7 +36,7 @@
 	<c:if test="${empty loginUser }">
    	<form action="<%=request.getContextPath() %>/login.do"	method="post">
 		<div class="form-group has-feedback">
-			<input type="text" class="form-control" name="id" placeholder="아이디를 입력하세요." value="${pastID }">
+			<input type="text" class="form-control" id="loginId" name="id" placeholder="아이디를 입력하세요." value="">
 			<span class="glyphicon glyphicon-envelope form-control-feedback"></span>
 		</div>
 		<div class="form-group has-feedback">
@@ -44,14 +44,12 @@
 			<span class="glyphicon glyphicon-lock form-control-feedback"></span>
 		</div>
 		<div class="row">
-			<div class="col-sm-8">
+			<div class="col-sm-6">
 				<div class="checkbox icheck">
-					<label> <input type="checkbox" name="rememberMe" value="check"> Remember Me
-					</label>
+					<button type="button" class="btn btn-primary btn-block btn-flat btn-sm" onclick="goPage('member/registForm.do', 'M010200');">회원가입</button>
 				</div>
 			</div>
-			<!-- /.col -->
-			<div class="col-sm-4">
+			<div class="col-sm-6">
 				<button type="submit" class="btn btn-primary btn-block btn-flat btn-sm">로그인</button>
 			</div>
 			<!-- /.col -->
@@ -69,4 +67,3 @@
     </div>
     <!-- /.sidebar -->
   </aside>
-  

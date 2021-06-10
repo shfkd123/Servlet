@@ -74,6 +74,14 @@
 					</div>
 				</div>
 				<div class="form-group row">
+					<label for="address" class="col-sm-3 control-label text-center">주소</label>
+
+					<div class="col-sm-9">
+						<input name="address" type="email" class="form-control" id="address"
+							placeholder="ex) 대전 중구" value="${member.address }">
+					</div>
+				</div>
+				<div class="form-group row">
 					<label for="email" class="col-sm-3 control-label text-center">이메일</label>
 
 					<div class="col-sm-9">

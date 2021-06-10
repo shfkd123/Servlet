@@ -26,8 +26,6 @@
 			<item value="net.harawata.mybatipse.wizard.mybatisCategory"/>
 			<item value="org.eclipse.jst.ws.ui.new"/>
 			<item value="org.eclipse.wst.XMLCategory"/>
-			<item value="org.eclipse.ui.Examples"/>
-			<item value="org.eclipse.ui.Examples/org.eclipse.wst.xml.examples"/>
 		</list>
 	</section>
 	<section name="ImportExportAction">
@@ -46,6 +44,7 @@
 		<item value="true" key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID"/>
 		<item value="true" key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\pc24\Desktop\servlet_JSP 수업\0609_command_bootstrap.zip"/>
 			<item value="C:\Users\pc24\Desktop\servlet_JSP 수업\0608_command_bootstrap.zip"/>
 			<item value="C:\Users\pc24\Desktop\0607_command_bootstrap.zip"/>
 			<item value="C:\Users\pc24\Desktop\0605_command_bootstrap.zip"/>

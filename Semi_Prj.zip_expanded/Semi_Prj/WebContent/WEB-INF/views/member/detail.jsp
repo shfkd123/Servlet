@@ -47,16 +47,16 @@
 	                  <label for="inputEmail3" class="col-sm-3 control-label text-right">아이디</label>
 	
 	                  <div class="col-sm-9">
-	                    <input name="id" type="text" class="form-control" id="inputEmail3"  value="${member.id }" readonly>
+	                    <input name="id" type="text" class="form-control" id="id"  value="${member.id }" readonly>
 	                  </div>
 	                </div>
 	                
 	                	               
 	                <div class="form-group row" >
-	                  <label for="inputEmail3" class="col-sm-3 control-label text-right">비밀번호</label>
+	                  <label for="password" class="col-sm-3 control-label text-right">비밀번호</label>
 	
 	                  <div class="col-sm-9">
-	                    <input name="id" type="password" class="form-control" id="inputEmail3"  value="${member.pwd }" readonly>
+	                    <input name="pwd" type="password" class="form-control" id="pwd"  value="${member.pwd }" readonly>
 	                  </div>
 	                </div>
 	                
@@ -65,7 +65,7 @@
 	                  <label for="inputPassword3" class="col-sm-3 control-label text-right">이  름</label>
 	
 	                  <div class="col-sm-9">
-	                    <input name="pwd" type="text" class="form-control" id="inputPassword3" value="${member.name }" readonly>
+	                    <input name="userName" type="text" class="form-control" id="userName" value="${member.name }" readonly>
 	                  </div>
 	                </div>
 	                
@@ -74,34 +74,32 @@
 	                  <label for="inputPassword3" class="col-sm-3 control-label text-right">이메일</label>
 	
 	                  <div class="col-sm-9">
-	                    <input name="email" type="email" class="form-control" id="inputPassword3" value="${member.email }" readonly>
+	                    <input name="email" type="email" class="form-control" id="email" value="${member.email }" readonly>
 	                  </div>
 	                </div>
 	                
 	                
 	                 <div class="form-group row">
-	                  <label for="inputPassword3" class="col-sm-3 control-label text-right">주소</label>
+	                  <label for="address" class="col-sm-3 control-label text-right">주소</label>
 
 	                  <div class="col-sm-9">
-	                    <input name="address" type="email" class="form-control" id="inputPassword3" value="${member.address }" readonly>
+	                    <input name="address" type="text" class="form-control" id="address" value="${member.address }" readonly>
 	                  </div>
 	                </div>
-	                
-	                
-	                        
+   
 	              </div>  
 		          <div class="card-footer" >
 		          		<div class="row">
-			          		<div class="col-sm-4 text-center">
+			          		<div class="col-sm-12 text-center">
 			          			<button type="button" onclick="location.href='modifyForm.do?id=${member.id}';" id="modifyBtn" class="btn btn-warning ">수 정</button>
 			          		</div>		          		
-			          		<div class="col-sm-4 text-center">
-			          			<button type="button" onclick="location.href='remove.do?id=${member.id}';" 
-			          			id="deleteBtn" class="btn btn-danger">삭 제</button>
-			          		</div>			          	
-			          		<div class="col-sm-4 text-center">
-			            		<button type="button" id="listBtn" onclick="CloseWindow();" class="btn btn-primary pull-right">닫 기</button>
-			            	</div>
+<!-- 			          		<div class="col-sm-6 text-center"> -->
+<%-- 			          			<button type="button" onclick="location.href='remove.do?id=${member.id}';"  --%>
+<!-- 			          			id="deleteBtn" class="btn btn-danger">삭 제</button> -->
+<!-- 			          		</div>			          	 -->
+<!-- 			          		<div class="col-sm-4 text-center"> -->
+<!-- 			            		<button type="button" id="listBtn" onclick="CloseWindow();" class="btn btn-primary pull-right">닫 기</button> -->
+<!-- 			            	</div> -->
 		          	    </div>  	
 		          </div>
 	      	  </form>
