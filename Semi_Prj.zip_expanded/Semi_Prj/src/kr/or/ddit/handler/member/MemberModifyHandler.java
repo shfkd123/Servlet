@@ -38,14 +38,12 @@ public class MemberModifyHandler implements Handler {
 		String id = multiReq.getParameter("id");
 		String pwd = multiReq.getParameter("pwd");
 		String email = multiReq.getParameter("email");
-		String authority= multiReq.getParameter("authority");
 		String name = multiReq.getParameter("name");
 		
 		MemberVO member = new MemberVO();
 		member.setId(id);
 		member.setPwd(pwd);
 		member.setEmail(email);
-		member.setAuthority(authority);
 		member.setName(name);
 		
 		//저장경로

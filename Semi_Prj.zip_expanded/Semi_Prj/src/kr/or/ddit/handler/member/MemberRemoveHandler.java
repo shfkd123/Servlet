@@ -36,7 +36,7 @@ public class MemberRemoveHandler implements Handler {
 		}
 
 		// DB삭제
-		memberService.delete(id);
+		memberService.disabled(id);
 
 		// 로그인 유저 확인
 		// 삭제되는 회원이 로그인 회원인경우 로그아웃 해야함

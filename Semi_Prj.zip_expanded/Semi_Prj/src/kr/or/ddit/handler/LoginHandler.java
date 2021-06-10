@@ -38,7 +38,7 @@ public class LoginHandler implements Handler {
 			throw e;
 		} catch (NotFoundIDException | InvalidPasswordException e) {			
 			url="redirect:";
-		} 
+		}  
 		return url;
 	}
 

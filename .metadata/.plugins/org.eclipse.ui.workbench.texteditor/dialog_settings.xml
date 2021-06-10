@@ -9,27 +9,27 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="Null" key="selection"/>
+		<item value="active" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="active"/>
+			<item value="게시글등록"/>
+			<item value="게시글"/>
+			<item value="공"/>
+			<item value="modify_go"/>
 			<item value="null"/>
-			<item value=":"/>
-			<item value="// TODO Auto-generated method stub"/>
-			<item value="notice"/>
-			<item value="nno"/>
-			<item value="registForm"/>
-			<item value="member.id"/>
-			<item value="selectMemberById"/>
-			<item value="viewcnt"/>
-			<item value="selectSearchNoticeListCount"/>
-			<item value="selectSearchNoticeList"/>
-			<item value="member"/>
-			<item value="data-id"/>
-			<item value="session"/>
-			<item value="multi"/>
+			<item value=".."/>
+			<item value="ReplyModifyHandler"/>
+			<item value="#m"/>
+			<item value="#modal"/>
+			<item value="#modal-"/>
+			<item value="pagination"/>
+			<item value="printPagination"/>
+			<item value="newReplyText"/>
+			<item value="registerHelper"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>
@@ -53,7 +53,7 @@
 		<item value="288" key="DIALOG_WIDTH"/>
 		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
 		<item value="376" key="DIALOG_HEIGHT"/>
-		<item value="671" key="DIALOG_X_ORIGIN"/>
-		<item value="400" key="DIALOG_Y_ORIGIN"/>
+		<item value="524" key="DIALOG_X_ORIGIN"/>
+		<item value="439" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

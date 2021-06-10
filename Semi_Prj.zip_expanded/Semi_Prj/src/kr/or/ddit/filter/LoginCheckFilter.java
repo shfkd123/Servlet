@@ -51,7 +51,7 @@ public class LoginCheckFilter implements Filter {
 			httpResp.setContentType("text/html;charset=utf-8");
 			PrintWriter out = httpResp.getWriter();
 			out.println("<script>");
-			out.println("alert('로그인은 필수입니다.');");
+			out.println("alert('로그인이 필요한 기능입니다.');");
 			out.println("if(window.opener){window.close();window.opener.parent.location.href='"
 					+httpReq.getContextPath()
 					+"/';}else{");

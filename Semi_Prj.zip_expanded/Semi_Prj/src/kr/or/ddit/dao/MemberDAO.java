@@ -14,6 +14,8 @@ public interface MemberDAO {
 	//회원정보 조회
 	MemberVO selectMemberById(SqlSession session, String id) throws SQLException;
 
+	int checkedEnabledMember(SqlSession session, String id) throws SQLException;
+	
 	//회원 등록
 	public void insertMember(SqlSession session, MemberVO member) throws SQLException;
 	
@@ -25,6 +27,9 @@ public interface MemberDAO {
 	
 	//회원 삭제
 	public void deleteMember(SqlSession session, String id) throws SQLException;
+	
+	//회원정지
+	public void disabledMember(SqlSession session, String id) throws SQLException;
 
 	
 }

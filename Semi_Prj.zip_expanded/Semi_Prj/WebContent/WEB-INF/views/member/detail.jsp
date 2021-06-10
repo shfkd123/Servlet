@@ -90,13 +90,12 @@
 	              </div>  
 		          <div class="card-footer" >
 		          		<div class="row">
-			          		<div class="col-sm-12 text-center">
-			          			<button type="button" onclick="location.href='modifyForm.do?id=${member.id}';" id="modifyBtn" class="btn btn-warning ">수 정</button>
+			          		<div class="col-sm-6 text-center">
+			          			<button type="button" onclick="location.href='modifyForm.do?id=${member.id}';" id="modifyBtn" class="btn btn-warning ">정보 변경</button>
 			          		</div>		          		
-<!-- 			          		<div class="col-sm-6 text-center"> -->
-<%-- 			          			<button type="button" onclick="location.href='remove.do?id=${member.id}';"  --%>
-<!-- 			          			id="deleteBtn" class="btn btn-danger">삭 제</button> -->
-<!-- 			          		</div>			          	 -->
+			          		<div class="col-sm-6 text-center">
+			          			<button type="button" onclick="member_disabled();" id="deleteBtn" class="btn btn-danger">탈  퇴</button>
+			          		</div>			          	
 <!-- 			          		<div class="col-sm-4 text-center"> -->
 <!-- 			            		<button type="button" id="listBtn" onclick="CloseWindow();" class="btn btn-primary pull-right">닫 기</button> -->
 <!-- 			            	</div> -->
@@ -111,6 +110,16 @@
 <script>
 window.onload=function(){
 	MemberPictureThumb(document.querySelector('[data-id="${member.id}"]'),'${member.picture}');
+}
+
+function member_disabled(){
+	//alert('gd');
+// 	if(confirm("정말로 탈퇴 진행을 하시겠습니까?");){
+// 		location.href='remove.do?id=${member.id}';		
+// 	}
+	confirm("정말로 탈퇴 진행을 하시겠습니까?")
+		location.href='remove.do?id=${member.id}';		
+	
 }
 </script>  
   

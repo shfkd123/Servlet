@@ -3,13 +3,13 @@
 <%@ page trimDirectiveWhitespaces="true" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <script>
-	alert("회원을 삭제했습니다.\n 회원리스트 페이지로 이동합니다.");
+	alert("탈퇴처리가 되었습니다. 고객님을 영원히 기다립니다.");
 	
 	<c:if test="${!empty loginUser}">
-		window.opener.parent.location.reload();
+		window.parent.location.reload();
 	</c:if>
 	<c:if test="${empty loginUser}">
-		window.opener.parent.location.href="/";
+		window.parent.location.href="/";
 	</c:if>
 	
 	CloseWindow();

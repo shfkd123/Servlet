@@ -95,9 +95,9 @@
 							</div>
 							
 						</div>
-						<div class='text-center'>
+					<div class='text-center'>
 							<ul id="pagination" class="pagination justify-content-center m-0">
-								
+
 							</ul>
 						</div>
 					</div>
@@ -107,7 +107,7 @@
 						<label for="newReplyText">Reply Text</label>
 						<input class="form-control" type="text"	placeholder="REPLY TEXT" id="newReplyText">
 						<br/>
-						<button type="button" class="btn btn-primary" id="replyAddBtn">ADD REPLY</button>
+						<button type="button" class="btn btn-primary" id="replyAddBtn" onclick="replyRegist_go();">ADD REPLY</button>
 					</div>				
 				</div>			
 				
@@ -116,46 +116,55 @@
     </section>
   </div>
   <!-- /.content-wrapper -->
+<!-- Modal -->
+<div id="modifyModal" class="modal modal-default fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" style="display:none;"></h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>        
+      </div>
+      <div class="modal-body" data-rno>
+        <p><input type="text" id="replytext" class="form-control"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-info" id="replyModBtn" onclick="replyModify_go();">Modify</button>
+        <button type="button" class="btn btn-danger" id="replyDelBtn" onclick="replyRemove_go();">DELETE</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <form role="form">
-	<input type="hidden" name="nno" value="${board.bno }" />
+	<input type="hidden" name="bno" value="${board.bno }" />
 </form>
 	
   
 <script>
-	
-	
 
-	function modify_go(){
-		var formObj = $("form[role='form']");
-		//alert("click modify btn");
-		formObj.attr({
-			'action':'modifyForm.do',
-			'method':'post'
-		});
+function modify_go(){
+	var formObj = $("form[role='form']");
+	//alert("click modify btn");
+	formObj.attr({
+		'action':'modifyForm.do',
+		'method':'post'
+	});
+	formObj.submit();
+}
+function remove_go(){
+	var formObj = $("form[role='form']");
+	//alert("click remove btn");
+	var answer = confirm("정말 삭제하시겠습니까?");
+	if(answer){		
+		formObj.attr("action", "remove.do");
+		formObj.attr("method", "post");
 		formObj.submit();
 	}
-	function remove_go(){
-		var formObj = $("form[role='form']");
-		//alert("click remove btn");
-		var answer = confirm("정말 삭제하시겠습니까?");
-		if(answer){		
-			formObj.attr("action", "remove.do");
-			formObj.attr("method", "post");
-			formObj.submit();
-		}
-	}
- 	
+}
+ 		
 </script>
  
 <%@ include file="/WEB-INF/views/board/reply_js.jsp" %>
- 
- 
- 
- 
- 
- 
- 
- 
- 
  

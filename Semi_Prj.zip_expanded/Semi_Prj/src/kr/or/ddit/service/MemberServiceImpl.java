@@ -34,6 +34,10 @@ public class MemberServiceImpl implements MemberService{
 												InvalidPasswordException {
 		SqlSession session = sqlSessionFactory.openSession();
 		try {
+			int count = memberDAO.checkedEnabledMember(session, id);
+			if (count > 0) {
+				throw new NotFoundIDException();
+			}
 			MemberVO member = memberDAO.selectMemberById(session, id);
 			if (member == null)
 				throw new NotFoundIDException();
@@ -84,6 +88,18 @@ public class MemberServiceImpl implements MemberService{
 		SqlSession session = sqlSessionFactory.openSession();
 		try {
 			memberDAO.deleteMember(session, id);
+		} catch (Exception e) {
+			session.close();
+		}
+		
+	}
+
+
+	@Override
+	public void disabled(String id) throws SQLException {
+		SqlSession session = sqlSessionFactory.openSession();
+		try {
+			memberDAO.disabledMember(session, id);
 		} catch (Exception e) {
 			session.close();
 		}

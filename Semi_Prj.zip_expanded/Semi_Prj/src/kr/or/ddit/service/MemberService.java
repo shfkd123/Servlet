@@ -27,6 +27,9 @@ public interface MemberService {
 	
 	//회원삭제
 	public void delete(String id) throws SQLException;
+	
+	//회원정지
+	public void disabled(String id) throws SQLException;
 
 }
 

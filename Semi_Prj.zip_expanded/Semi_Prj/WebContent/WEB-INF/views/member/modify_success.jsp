@@ -4,8 +4,9 @@
 
 <body>
 <script>
-	alert("회원정보 수정에 성공했습니다.\n 회원리스트 페이지로 이동합니다.");
-
-	location.href='detail.do?id=${member.id}';
+	alert("회원님의 정보가 수정되었습니다.");
+	//location.href=''reload();
+	window.parent.location.reload();
+ 	location.href='detail.do?id=${loginUser.id}';
 </script>
 </body>

@@ -42,4 +42,16 @@ public class MemberDAOImpl implements MemberDAO{
 		
 	}
 
+	@Override
+	public void disabledMember(SqlSession session, String id) throws SQLException {
+		session.update("Member-Mapper.disabledMember", id);
+		
+	}
+
+	@Override
+	public int checkedEnabledMember(SqlSession session, String id) throws SQLException {
+		int count =  session.selectOne("Member-Mapper.checkedEnabledMember", id);
+		return count;
+	}
+
 }
