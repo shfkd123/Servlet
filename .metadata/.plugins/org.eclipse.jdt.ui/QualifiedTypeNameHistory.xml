@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.io.File"/>
-<fullyQualifiedTypeName name="kr.or.ddit.dto.MemberVO"/>
-<fullyQualifiedTypeName name="javax.servlet.Filter"/>
-<fullyQualifiedTypeName name="kr.or.ddit.context.ApplicationContext"/>
 <fullyQualifiedTypeName name="kr.or.ddit.listener.ApplicationContextInitListener"/>
 <fullyQualifiedTypeName name="org.junit.Test"/>
 <fullyQualifiedTypeName name="org.junit.After"/>
@@ -38,7 +34,6 @@
 <fullyQualifiedTypeName name="java.lang.Readable"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
 <fullyQualifiedTypeName name="kr.or.ddit.dao.ReplyDAO"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="kr.or.ddit.controller.JSONResolver"/>
@@ -57,7 +52,12 @@
 <fullyQualifiedTypeName name="kr.or.ddit.service.ReplyService"/>
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
-<fullyQualifiedTypeName name="java.sql.SQLException"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
 <fullyQualifiedTypeName name="kr.or.ddit.service.MemberService"/>
+<fullyQualifiedTypeName name="java.sql.SQLException"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
+<fullyQualifiedTypeName name="kr.or.ddit.service.OrderService"/>
+<fullyQualifiedTypeName name="kr.or.ddit.dto.OrderVO"/>
+<fullyQualifiedTypeName name="kr.or.ddit.service.ProdService"/>
+<fullyQualifiedTypeName name="kr.or.ddit.dto.ProdVO"/>
 </qualifiedTypeNameHistroy>

@@ -9,12 +9,17 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="active" key="selection"/>
+		<item value="hr" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="hr"/>
+			<item value="orderQty"/>
+			<item value="취소"/>
+			<item value="아이디"/>
+			<item value="title"/>
 			<item value="active"/>
 			<item value="게시글등록"/>
 			<item value="게시글"/>
@@ -25,13 +30,9 @@
 			<item value="ReplyModifyHandler"/>
 			<item value="#m"/>
 			<item value="#modal"/>
-			<item value="#modal-"/>
-			<item value="pagination"/>
-			<item value="printPagination"/>
-			<item value="newReplyText"/>
-			<item value="registerHelper"/>
 		</list>
 		<list key="replacehistory">
+			<item value="상품코드"/>
 			<item value=""/>
 			<item value="bno"/>
 			<item value="board"/>
@@ -46,7 +47,6 @@
 			<item value="&lt;%=request.getContextPath() %&gt;/resources/bootstrap/plugins/"/>
 			<item value="member"/>
 			<item value="return sqlSessionFactory.getConfiguration();"/>
-			<item value="println"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
