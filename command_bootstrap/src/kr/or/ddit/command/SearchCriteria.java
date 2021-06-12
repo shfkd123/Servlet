@@ -4,9 +4,7 @@ public class SearchCriteria extends Criteria {
 
 	private String searchType=""; // 검색구분
 	private String keyword=""; //검색어
-	
-	
-	
+
 	public String getSearchType() {
 		return searchType;
 	}

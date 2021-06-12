@@ -5,4 +5,6 @@
 <typeInfo handle="=command_bootstrap/src&lt;kr.or.ddit.dao{NoticeDAO.java[NoticeDAO" modifiers="513" timestamp="1623138439270"/>
 <typeInfo handle="=command_bootstrap/src&lt;kr.or.ddit.service{BoardService.java[BoardService" modifiers="513" timestamp="1623203222503"/>
 <typeInfo handle="=command_bootstrap/src&lt;kr.or.ddit.handler{Handler.java[Handler" modifiers="513" timestamp="1622092810000"/>
+<typeInfo handle="=command_bootstrap_my/src&lt;kr.or.ddit.handler{Handler.java[Handler" modifiers="513" timestamp="1622092988000"/>
+<typeInfo handle="=command_bootstrap_my/D:\/B_Util\/5.ApacheTomcat\/apache-tomcat-7.0.73-windows-x64\/apache-tomcat-7.0.73\/lib\/tomcat-coyote.jar&lt;org.apache.tomcat.util.net(AprEndpoint$Handler.class[Handler" modifiers="1545" timestamp="1478528994000"/>
 </typeInfoHistroy>
