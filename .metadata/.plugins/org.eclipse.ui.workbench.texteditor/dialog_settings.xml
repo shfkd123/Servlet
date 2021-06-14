@@ -9,51 +9,51 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="hr" key="selection"/>
-		<item value="false" key="casesensitive"/>
+		<item value="inputRow" key="selection"/>
+		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="hr"/>
-			<item value="orderQty"/>
-			<item value="취소"/>
-			<item value="아이디"/>
-			<item value="title"/>
-			<item value="active"/>
-			<item value="게시글등록"/>
-			<item value="게시글"/>
-			<item value="공"/>
-			<item value="modify_go"/>
+			<item value="inputRow"/>
+			<item value="Add"/>
+			<item value="nno"/>
+			<item value="notice"/>
+			<item value="list.do"/>
+			<item value="package kr.or.ddit.utils;"/>
 			<item value="null"/>
-			<item value=".."/>
-			<item value="ReplyModifyHandler"/>
-			<item value="#m"/>
-			<item value="#modal"/>
+			<item value="// TODO Auto-generated method stub"/>
+			<item value="Pds"/>
+			<item value="pds"/>
+			<item value="Notice"/>
+			<item value="from notice"/>
+			<item value="pnio"/>
+			<item value="resultType=&quot;notice&quot;"/>
+			<item value="hr"/>
 		</list>
 		<list key="replacehistory">
-			<item value="상품코드"/>
+			<item value="pno"/>
+			<item value="pds"/>
 			<item value=""/>
+			<item value="Attach"/>
+			<item value="attach"/>
+			<item value="Pds"/>
+			<item value="from pds"/>
+			<item value="resultType=&quot;pds&quot;"/>
+			<item value="상품코드"/>
 			<item value="bno"/>
 			<item value="board"/>
 			<item value="viewCnt"/>
 			<item value="multiReq"/>
 			<item value="MemberListSearchPageHandler"/>
 			<item value="Member-Mapper"/>
-			<item value="MemberVO"/>
-			<item value="MemberDAO"/>
-			<item value="id"/>
-			<item value="&lt;%=request.getContextPath()%&gt;/resources"/>
-			<item value="&lt;%=request.getContextPath() %&gt;/resources/bootstrap/plugins/"/>
-			<item value="member"/>
-			<item value="return sqlSessionFactory.getConfiguration();"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="288" key="DIALOG_WIDTH"/>
 		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
 		<item value="376" key="DIALOG_HEIGHT"/>
-		<item value="524" key="DIALOG_X_ORIGIN"/>
-		<item value="439" key="DIALOG_Y_ORIGIN"/>
+		<item value="638" key="DIALOG_X_ORIGIN"/>
+		<item value="464" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

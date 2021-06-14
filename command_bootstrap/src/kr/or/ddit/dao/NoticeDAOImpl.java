@@ -7,7 +7,6 @@ import org.apache.ibatis.session.RowBounds;
 import org.apache.ibatis.session.SqlSession;
 
 import kr.or.ddit.command.SearchCriteria;
-import kr.or.ddit.dto.MemberVO;
 import kr.or.ddit.dto.NoticeVO;
 
 public class NoticeDAOImpl implements NoticeDAO {
