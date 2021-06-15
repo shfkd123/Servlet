@@ -23,25 +23,21 @@ public class MultipartHttpServletRequestParser {
 	private static final int MAX_FILE_SIZE = 1024 * 1024 * 40; // 40MB
 	private static final int MAX_REQUEST_SIZE = 1024 * 1024 * 200; // 200MB
 
-	
 	Map<String, String[]> paramString = new HashMap<String, String[]>();
 	Map<String, List<FileItem>> paramFile = new HashMap<String, List<FileItem>>();
-	
+
 	public MultipartHttpServletRequestParser(HttpServletRequest request)
-											throws NotMultipartFormDataException, 
-												   UnsupportedEncodingException, 
-												   FileUploadException {
-		
+			throws NotMultipartFormDataException, UnsupportedEncodingException, FileUploadException {
+
 		this(request, MEMORY_THRESHOLD, MAX_FILE_SIZE, MAX_REQUEST_SIZE);
 
 	}
 
-	public MultipartHttpServletRequestParser(HttpServletRequest request, 
-											int memory_threshold, int max_file_size,int max_request_size)
-													throws NotMultipartFormDataException, UnsupportedEncodingException, FileUploadException {
-		ServletFileUpload upload = 
-				ServletFileUploadBuilder.build(request, memory_threshold, max_file_size,
-												max_request_size);
+	public MultipartHttpServletRequestParser(HttpServletRequest request, int memory_threshold, int max_file_size,
+			int max_request_size)
+			throws NotMultipartFormDataException, UnsupportedEncodingException, FileUploadException {
+		ServletFileUpload upload = ServletFileUploadBuilder.build(request, memory_threshold, max_file_size,
+				max_request_size);
 
 		List<FileItem> formItems = upload.parseRequest(request);
 
@@ -55,28 +51,36 @@ public class MultipartHttpServletRequestParser {
 
 			} else {// 1.2 파일
 				List<FileItem> files = this.paramFile.get(paramName);
-				
+
 				if (files == null) {
 					files = new ArrayList<FileItem>();
 					this.paramFile.put(paramName, files);
 				}
-				
+
 				files.add(item);
 			}
 		}
-		
+
 	}
+
 	
+	//file등록을 하지 않을 경우(null)일 경우가 존재할 수도 있음.
+	//null 판단 필요
 	public String getParameter(String paramName) {
-		return this.paramString.get(paramName)[0];
+		String[] param = this.paramString.get(paramName);
+		String result = null;
+		if (param != null)
+			result = param[0];
+		return result;
 	}
+
 	public String[] getParameterValues(String paramName) {
 		return this.paramString.get(paramName);
 	}
-	
+
 	public Enumeration<String> getParameterNames() {
 		List<String> paramNames = new ArrayList<String>();
-		
+
 		if (paramString.size() > 0) {
 			for (String paramName : paramString.keySet()) {
 				paramNames.add(paramName);
@@ -87,28 +91,31 @@ public class MultipartHttpServletRequestParser {
 				paramNames.add(paramName);
 			}
 		}
-		
+
 		Enumeration<String> result = Collections.enumeration(paramNames);
-		
-		
+
 		return result;
 	}
-	
+
+	//file등록을 하지 않을 경우(null)일 경우가 존재할 수도 있음.
+	//null 판단 필요
 	public FileItem getFileItem(String paramName) {
-		return paramFile.get(paramName).get(0);
+		List<FileItem> itemList = paramFile.get(paramName);
+		FileItem result = null;
+
+		if (itemList != null)
+			result = itemList.get(0);
+
+		return result;
 	}
 
 	public FileItem[] getFileItems(String paramName) {
 		List<FileItem> items = paramFile.get(paramName);
-		FileItem[] files = new FileItem[items.size()];
-		items.toArray(files);
+		FileItem[] files = null;
+		if(items != null) {
+			files = new FileItem[items.size()];
+			items.toArray(files);
+		}
 		return files;
 	}
 }
-
-
-
-
-
-
-
