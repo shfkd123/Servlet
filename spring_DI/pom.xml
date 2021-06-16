@@ -17,7 +17,13 @@
 	
 	<properties>
 		<java-version>1.8</java-version>
+		
 		<org.springframework-version>4.3.2.RELEASE</org.springframework-version>
+		<oracle.ojdbc-version>11.2.0.3</oracle.ojdbc-version>
+		<org.apache.dbcp.version>2.5.0</org.apache.dbcp.version>
+		<org.mybatis-version>3.5.0</org.mybatis-version>
+		<org.mybatis.spring-version>2.0.0</org.mybatis.spring-version>
+		
 		<org.aspectj-version>1.6.10</org.aspectj-version>
 		<org.slf4j-version>1.6.6</org.slf4j-version>
 	</properties>
@@ -40,19 +46,39 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
 		
 		<!-- https://mvnrepository.com/artifact/oracle/ojdbc6 -->
 		<dependency>
 		    <groupId>oracle</groupId>
 		    <artifactId>ojdbc6</artifactId>
-		    <version>11.2.0.3</version>
+		    <version>${oracle.ojdbc-version}</version>
 		</dependency>
 		
 		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-dbcp2 -->
 		<dependency>
 		    <groupId>org.apache.commons</groupId>
 		    <artifactId>commons-dbcp2</artifactId>
-		    <version>2.5.0</version>
+		    <version>${org.apache.dbcp.version}</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
+		<dependency>
+		    <groupId>org.mybatis</groupId>
+		    <artifactId>mybatis</artifactId>
+		    <version>${org.mybatis-version}</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis-spring -->
+		<dependency>
+		    <groupId>org.mybatis</groupId>
+		    <artifactId>mybatis-spring</artifactId>
+		    <version>${org.mybatis.spring-version}</version>
 		</dependency>
 		
 				
@@ -81,6 +107,7 @@
 			<version>${org.slf4j-version}</version>
 			<scope>runtime</scope>
 		</dependency>
+				
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>

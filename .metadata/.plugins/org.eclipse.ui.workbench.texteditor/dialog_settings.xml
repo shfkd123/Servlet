@@ -9,32 +9,37 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="inputRow" key="selection"/>
+		<item value="" key="selection"/>
 		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
-		<item value="false" key="wholeword"/>
+		<item value="true" key="wholeword"/>
 		<list key="findhistory">
-			<item value="inputRow"/>
-			<item value="Add"/>
-			<item value="nno"/>
-			<item value="notice"/>
-			<item value="list.do"/>
-			<item value="package kr.or.ddit.utils;"/>
-			<item value="null"/>
-			<item value="// TODO Auto-generated method stub"/>
-			<item value="Pds"/>
-			<item value="pds"/>
-			<item value="Notice"/>
-			<item value="from notice"/>
-			<item value="pnio"/>
-			<item value="resultType=&quot;notice&quot;"/>
-			<item value="hr"/>
+			<item value="re"/>
+			<item value="javax"/>
+			<item value="session"/>
+			<item value="p:session-ref=&quot;session&quot; /&gt;"/>
+			<item value="p:session-ref=&quot;session&quot; /&gt;&#x09;"/>
+			<item value="sqlSession"/>
+			<item value="session.close();"/>
+			<item value="session,"/>
+			<item value="SqlSession session = sqlSessionFactory.openSession();"/>
+			<item value="finally {"/>
+			<item value="} finally {"/>
+			<item value="session, "/>
+			<item value="&#x09;SqlSession session = sqlSessionFactory.openSession();"/>
+			<item value="SqlSession session, "/>
+			<item value="SqlSession session,"/>
 		</list>
 		<list key="replacehistory">
+			<item value="sqlSession"/>
+			<item value="p:sqlSession-ref=&quot;session&quot; /&gt;&#x09;"/>
+			<item value="session"/>
+			<item value=""/>
+			<item value="com.spring."/>
+			<item value="kr.or.ddit."/>
 			<item value="pno"/>
 			<item value="pds"/>
-			<item value=""/>
 			<item value="Attach"/>
 			<item value="attach"/>
 			<item value="Pds"/>
@@ -42,18 +47,13 @@
 			<item value="resultType=&quot;pds&quot;"/>
 			<item value="상품코드"/>
 			<item value="bno"/>
-			<item value="board"/>
-			<item value="viewCnt"/>
-			<item value="multiReq"/>
-			<item value="MemberListSearchPageHandler"/>
-			<item value="Member-Mapper"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="288" key="DIALOG_WIDTH"/>
 		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
 		<item value="376" key="DIALOG_HEIGHT"/>
-		<item value="638" key="DIALOG_X_ORIGIN"/>
+		<item value="636" key="DIALOG_X_ORIGIN"/>
 		<item value="464" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>
