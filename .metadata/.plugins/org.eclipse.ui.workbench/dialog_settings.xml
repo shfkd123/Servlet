@@ -41,7 +41,7 @@
 	</section>
 	<section name="ImportExportAction">
 		<item value="org.eclipse.ui.wizards.export.ZipFile" key="ImportExportPage.STORE_SELECTED_EXPORT_WIZARD_ID"/>
-		<item value="org.eclipse.ui.wizards.import.ExternalProject" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
+		<item value="org.eclipse.e4.ui.importer.wizard" key="ImportExportPage.STORE_SELECTED_IMPORT_WIZARD_ID"/>
 		<list key="ImportExportPage.STORE_EXPANDED_IMPORT_CATEGORIES">
 			<item value="org.eclipse.ui.Basic"/>
 		</list>
@@ -55,6 +55,7 @@
 		<item value="true" key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID"/>
 		<item value="true" key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\pc24\Desktop\servlet_JSP 수업\0617_spring.zip"/>
 			<item value="C:\Users\pc24\Desktop\servlet_JSP 수업\0616_spring.zip"/>
 			<item value="C:\Users\pc24\Desktop\servlet_JSP 수업\0615_command_bootstrap&amp;스프링.zip"/>
 			<item value="C:\Users\pc24\Desktop\servlet_JSP 수업\0614_command_bootstrap.zip"/>
@@ -74,7 +75,6 @@
 			<item value="C:\Users\pc24\Desktop\command.zip"/>
 			<item value="C:\Users\pc24\Desktop\servlet_default.zip"/>
 			<item value="C:\Users\pc24\Desktop\Servlet_민지.zip"/>
-			<item value="C:\Users\pc24\Desktop\5월6일과제.zip"/>
 		</list>
 	</section>
 </section>

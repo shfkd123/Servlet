@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
 <typeInfo handle="=MyServlet_MyBatis/src&lt;kr.or.ddit.service{MemberManagementService.java[MemberManagementService" modifiers="513" timestamp="1621944525297"/>
-<typeInfo handle="=command_bootstrap/D:\/B_Util\/2.Java\/jdk 1.8\/jre\/lib\/rt.jar&lt;com.sun.corba.se.impl.ior(Handler.class[Handler" modifiers="1536" timestamp="1610359322136"/>
-<typeInfo handle="=command_bootstrap/src&lt;kr.or.ddit.dao{NoticeDAO.java[NoticeDAO" modifiers="513" timestamp="1623138439270"/>
-<typeInfo handle="=command_bootstrap/src&lt;kr.or.ddit.service{BoardService.java[BoardService" modifiers="513" timestamp="1623203222503"/>
 <typeInfo handle="=command_bootstrap_my/src&lt;kr.or.ddit.handler{Handler.java[Handler" modifiers="513" timestamp="1622092988000"/>
 <typeInfo handle="=command_bootstrap_my/D:\/B_Util\/5.ApacheTomcat\/apache-tomcat-7.0.73-windows-x64\/apache-tomcat-7.0.73\/lib\/tomcat-coyote.jar&lt;org.apache.tomcat.util.net(AprEndpoint$Handler.class[Handler" modifiers="1545" timestamp="1478528994000"/>
-<typeInfo handle="=command_bootstrap/src&lt;kr.or.ddit.dao{PdsDAO.java[PdsDAO" modifiers="513" timestamp="1623636082004"/>
-<typeInfo handle="=command_bootstrap/src&lt;kr.or.ddit.handler{Handler.java[Handler" modifiers="513" timestamp="1622092810000"/>
 </typeInfoHistroy>

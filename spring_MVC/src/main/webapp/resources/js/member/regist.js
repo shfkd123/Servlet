@@ -65,7 +65,7 @@ function upload_go(){
    
    
    $.ajax({
-      url:"/member/picture.do",
+      url:"picture.do",
       data:formData,
       type:'post',
       processData:false,
@@ -115,7 +115,7 @@ var checkedID=""
       
       
       $.ajax({
-         url : "/member/idCheck.do?id="+input_ID.val(),
+         url : "idCheck.do?id="+input_ID.val(),
          method : "get",
          success : function(result){
                console.log(result);

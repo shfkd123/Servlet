@@ -9,9 +9,10 @@
 		window.opener.parent.location.reload();
 	</c:if>
 	<c:if test="${empty loginUser}">
-		window.opener.parent.location.href="/";
+		window.opener.parent.location.href="<%=request.getContextPath()%>";
 	</c:if>
 	
-	CloseWindow();
+	window.close();
+	//CloseWindow();
 </script>
 

@@ -21,9 +21,8 @@
     	p:mapperLocations="classpath:com/spring/mybatis/*-Mapper.xml"
     />
     
-    <bean id="sqlSession" class="org.mybatis.spring.SqlsessionTemplate"
-    	c:sqlSessionFactory-ref="sqlSessionFactory" />
-    
+    <bean id="sqlSession" class="org.mybatis.spring.SqlsessionTemplate" c:sqlSessionFactory-ref="sqlSessionFactory" />
+     
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager"
     	p:dataSource-ref="dataSource" />
     	
