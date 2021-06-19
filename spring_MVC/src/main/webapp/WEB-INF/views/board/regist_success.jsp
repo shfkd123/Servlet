@@ -4,7 +4,7 @@
 
 
 <script>
-	alert("공지사항 등록이 성공했습니다.");
+	alert("게시글이 등록에 성공했습니다.");
 	window.opener.parent.location.reload();	
 	window.close();
 </script>

@@ -91,11 +91,3 @@
 		where nno=#{nno}		
 	</update>
 </mapper>
-
-
-
-
-
-
-
-

@@ -12,62 +12,60 @@ import com.spring.dto.NoticeVO;
 public class NoticeDAOImpl implements NoticeDAO {
 
 	private SqlSession session;
-
 	public void setSqlSession(SqlSession session) {
-		this.session = session;
+		this.session=session;
 	}
 	
 	@Override
-	public List<NoticeVO> selectSearchNoticeList(SearchCriteria cri) throws SQLException {
-		int offset = cri.getStartRowNum();
-		int limit = cri.getPerPageNum();
-		RowBounds rowBounds = new RowBounds(offset, limit);
-
-		List<NoticeVO> noticeList = session.selectList("Notice-Mapper.selectSearchNoticeList", cri, rowBounds);
+	public List<NoticeVO> selectSearchNoticeList( SearchCriteria cri) throws SQLException {
+		
+		int offset=cri.getStartRowNum();
+		int limit=cri.getPerPageNum();		
+		RowBounds rowBounds=new RowBounds(offset,limit);		
+		
+		List<NoticeVO> noticeList=
+				session.selectList("Notice-Mapper.selectSearchNoticeList",cri,rowBounds);
+		
 		return noticeList;
 	}
 
 	@Override
-	public int selectSearchNoticeListCount(SearchCriteria cri) throws SQLException {
-		int count = 0;
-		count = session.selectOne("Notice-Mapper.selectSearchNoticeListCount", cri);
+	public int selectSearchNoticeListCount( SearchCriteria cri) throws SQLException {
+		int count=session.selectOne("Notice-Mapper.selectSearchNoticeListCount",cri);
 		return count;
 	}
 
 	@Override
-	public NoticeVO selectNoticeByNno(int nno) throws SQLException {
-		NoticeVO notice = session.selectOne("Notice-Mapper.selectNoticeByNno", nno);
+	public NoticeVO selectNoticeByNno( int nno) throws SQLException {
+		NoticeVO notice=session.selectOne("Notice-Mapper.selectNoticeByNno",nno);
 		return notice;
 	}
 
 	@Override
-	public void increaseViewCount(int nno) throws SQLException {
-		session.update("Notice-Mapper.increaseViewCount", nno);
+	public void increaseViewCount( int nno) throws SQLException {
+		session.update("Notice-Mapper.increaseViewCount",nno);
+		
 	}
 
 	@Override
 	public int selectNoticeSequenceNextValue() throws SQLException {
-		int seq_num = session.selectOne("Notice-Mapper.selectNoticeSequenceNextValue");
+		int seq_num=session.selectOne("Notice-Mapper.selectNoticeSequenceNextValue");
 		return seq_num;
 	}
 
 	@Override
-	public void insertNotice(NoticeVO notice) throws SQLException {
-		session.update("Notice-Mapper.insertNotice", notice);
-
-	}
-
-	@Override
-	public void modifyNotice(NoticeVO notice) throws SQLException {
-		session.update("Notice-Mapper.modifyNotice", notice);
+	public void insertNotice( NoticeVO notice) throws SQLException {
+		session.update("Notice-Mapper.insertNotice",notice);
 		
+	}
+	
+	@Override
+	public void updateNotice(NoticeVO notice) throws SQLException {
+		session.update("Notice-Mapper.updateNotice",notice);
 	}
 
 	@Override
 	public void deleteNotice(int nno) throws SQLException {
-		session.update("Notice-Mapper.deleteNotice", nno);
-		
+		session.update("Notice-Mapper.deleteNotice",nno);
 	}
-
-
 }

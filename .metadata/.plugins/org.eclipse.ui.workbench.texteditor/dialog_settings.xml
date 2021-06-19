@@ -9,12 +9,14 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="" key="selection"/>
+		<item value="boardService" key="selection"/>
 		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="true" key="wholeword"/>
 		<list key="findhistory">
+			<item value="service"/>
+			<item value="// TODO Auto-generated method stub"/>
 			<item value="LOGOUT"/>
 			<item value="re"/>
 			<item value="javax"/>
@@ -28,14 +30,13 @@
 			<item value="finally {"/>
 			<item value="} finally {"/>
 			<item value="session, "/>
-			<item value="&#x09;SqlSession session = sqlSessionFactory.openSession();"/>
-			<item value="SqlSession session, "/>
 		</list>
 		<list key="replacehistory">
+			<item value="boardService"/>
+			<item value=""/>
 			<item value="sqlSession"/>
 			<item value="p:sqlSession-ref=&quot;session&quot; /&gt;&#x09;"/>
 			<item value="session"/>
-			<item value=""/>
 			<item value="com.spring."/>
 			<item value="kr.or.ddit."/>
 			<item value="pno"/>
@@ -46,7 +47,6 @@
 			<item value="from pds"/>
 			<item value="resultType=&quot;pds&quot;"/>
 			<item value="상품코드"/>
-			<item value="bno"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

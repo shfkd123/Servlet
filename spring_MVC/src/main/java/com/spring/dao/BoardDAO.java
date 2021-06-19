@@ -3,35 +3,28 @@ package com.spring.dao;
 import java.sql.SQLException;
 import java.util.List;
 
+import org.apache.ibatis.session.SqlSession;
+
 import com.spring.command.SearchCriteria;
 import com.spring.dto.BoardVO;
 
 public interface BoardDAO {
-
-	//자유 게시판 출력
-	List<BoardVO> selectSearchBoardList(SearchCriteria cri) throws SQLException;
 	
-	//자유 게시판 출력 개수
-	int selectSearchBoardListCount(SearchCriteria cri) throws SQLException;
+	List<BoardVO> selectBoardCriteria(SearchCriteria cri) throws SQLException;
 
-	//viewcnt 증가
-	void increaseViewCount(int bno) throws SQLException;
-	
-	//자유 게시판 상세 조회
+	int selectBoardCriteriaTotalCount(SearchCriteria cri) throws SQLException;
+
 	BoardVO selectBoardByBno(int bno) throws SQLException;
-	
-	//Board_seq.nextval 가져오기
-	int selectBoardSequenceNextValue() throws SQLException;
 
-	//자유 게시판 등록
 	void insertBoard(BoardVO board) throws SQLException;
-	
-	//자유 게시판 수정
-	void modifyBoard(BoardVO board) throws SQLException;
-	
-	//자유 게시판 삭제
-	void removeBoard(int bno) throws SQLException;
-	
 
+	void updateBoard(BoardVO board) throws SQLException;
 
+	void deleteBoard(int bno) throws SQLException;
+
+	// viewcnt 증가
+	void increaseViewCnt(int bno) throws SQLException;
+
+	// board_seq.nextval 가져오기
+	int selectBoardSeqNext() throws SQLException;
 }

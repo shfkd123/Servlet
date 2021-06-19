@@ -19,24 +19,9 @@
 		</list>
 	</section>
 	<section name="NewWizardAction">
-		<item value="org.eclipse.ui.wizards.new.file" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<item value="org.eclipse.jst.jsp.ui.internal.wizard.NewJSPWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="org.eclipse.ui.Basic"/>
-			<item value="org.eclipse.jdt.ui.java"/>
-			<item value="org.eclipse.jdt.ui.java/org.eclipse.jdt.debug.ui.java"/>
-			<item value="org.eclipse.wst.jsdt.ui.java"/>
-			<item value="org.eclipse.jpt.jaxb"/>
-			<item value="org.eclipse.jpt.jpa"/>
-			<item value="org.eclipse.jpt.jpa/org.eclipse.jpt.jpa.eclipselink"/>
-			<item value="org.eclipse.pde.PDE"/>
-			<item value="org.springframework.ide.eclipse.beans.ui.wizards.category"/>
-			<item value="org.eclipse.datatools.sql"/>
-			<item value="org.eclipse.pde.userAssistance"/>
 			<item value="org.eclipse.wst.web.ui"/>
-			<item value="org.eclipse.jst.ws.ui.new"/>
-			<item value="org.eclipse.wst.XMLCategory"/>
-			<item value="org.eclipse.ui.Examples"/>
-			<item value="org.eclipse.ui.Examples/org.eclipse.wst.xml.examples"/>
 		</list>
 	</section>
 	<section name="ImportExportAction">
@@ -55,6 +40,8 @@
 		<item value="true" key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID"/>
 		<item value="true" key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\pc24\Desktop\servlet_JSP 수업\0618_spring.zip"/>
+			<item value="C:\Users\pc24\Desktop\i.zip"/>
 			<item value="C:\Users\pc24\Desktop\servlet_JSP 수업\0617_spring.zip"/>
 			<item value="C:\Users\pc24\Desktop\servlet_JSP 수업\0616_spring.zip"/>
 			<item value="C:\Users\pc24\Desktop\servlet_JSP 수업\0615_command_bootstrap&amp;스프링.zip"/>
@@ -73,8 +60,6 @@
 			<item value="C:\Users\pc24\Desktop\0602Command_bootstrap.zip"/>
 			<item value="C:\Users\pc24\Desktop\Servlet.zip"/>
 			<item value="C:\Users\pc24\Desktop\command.zip"/>
-			<item value="C:\Users\pc24\Desktop\servlet_default.zip"/>
-			<item value="C:\Users\pc24\Desktop\Servlet_민지.zip"/>
 		</list>
 	</section>
 </section>

@@ -3,6 +3,7 @@
 <%@ page trimDirectiveWhitespaces="true" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 
+   
 	<section class="content-header">
 	  	<div class="container-fluid">
 	  		<div class="row md-2">
@@ -63,16 +64,16 @@
 		</div><!-- end row -->
     </section>
     <!-- /.content -->
- 
-<script>   
-    window.onload=function(){
-	Summernote_start($('#content'));
-}
-   
     
-function modify_go(){
-	var form=$('form[role="form"]');
-	form.submit();
-}
-</script>
-<%@ include file="/WEB-INF/views/common/summernote.jsp" %>
+    
+    <script>
+    	window.onload=function(){
+    		Summernote_start($("#content"));
+    	}
+    	
+    	function modify_go(){
+    		$("form[role='form']").submit();
+    	}
+    </script>
+    
+    <%@ include file="/WEB-INF/views/common/summernote.jsp" %>

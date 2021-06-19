@@ -5,6 +5,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+
 import com.spring.command.PageMaker;
 import com.spring.command.SearchCriteria;
 import com.spring.dao.ReplyDAO;
@@ -35,12 +38,10 @@ public class ReplyServiceImpl implements ReplyService {
 		dataMap.put("pageMaker", pageMaker);
 
 		return dataMap;
-
 	}
 
 	@Override
 	public void registReply(ReplyVO reply) throws SQLException {
-
 		int rno = replyDAO.selectReplySeqNextValue();
 		reply.setRno(rno);
 
@@ -59,15 +60,12 @@ public class ReplyServiceImpl implements ReplyService {
 	public void removeReply(int rno) throws SQLException {
 
 		replyDAO.deleteReply(rno);
-
 	}
 
 	@Override
 	public int getReplyListCount(int bno) throws SQLException {
-
 		int count = replyDAO.countReply(bno);
 		return count;
-
 	}
 
 }

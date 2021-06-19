@@ -71,7 +71,6 @@
 window.onload=function(){
 	Summernote_start($('#content')); 
 }
-
 function regist_go(){
 	var form = document.registForm;
 	if(form.title.value==""){
@@ -84,11 +83,3 @@ function regist_go(){
 </script>
 
 <%@ include file="/WEB-INF/views/common/summernote.jsp" %>
-
-
-
-
-    
-    
-    
-    
