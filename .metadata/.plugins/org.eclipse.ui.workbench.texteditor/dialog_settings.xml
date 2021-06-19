@@ -9,12 +9,13 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="boardService" key="selection"/>
+		<item value="nno" key="selection"/>
 		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="true" key="wholeword"/>
 		<list key="findhistory">
+			<item value="nno"/>
 			<item value="service"/>
 			<item value="// TODO Auto-generated method stub"/>
 			<item value="LOGOUT"/>
@@ -29,7 +30,6 @@
 			<item value="SqlSession session = sqlSessionFactory.openSession();"/>
 			<item value="finally {"/>
 			<item value="} finally {"/>
-			<item value="session, "/>
 		</list>
 		<list key="replacehistory">
 			<item value="boardService"/>

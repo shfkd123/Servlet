@@ -11,6 +11,8 @@
                         location="classpath:com/spring/properties/*.properties"/>
    
    <import resource="./dataSource-context.xml"/>
+   
+   <import resource="./application-context.xml"/>
 
       
 </beans>
