@@ -4,4 +4,5 @@
 <typeInfo handle="=command_bootstrap_my/src&lt;kr.or.ddit.handler{Handler.java[Handler" modifiers="513" timestamp="1622092988000"/>
 <typeInfo handle="=command_bootstrap_my/D:\/B_Util\/5.ApacheTomcat\/apache-tomcat-7.0.73-windows-x64\/apache-tomcat-7.0.73\/lib\/tomcat-coyote.jar&lt;org.apache.tomcat.util.net(AprEndpoint$Handler.class[Handler" modifiers="1545" timestamp="1478528994000"/>
 <typeInfo handle="=spring_MVC/src\/main\/java&lt;com.spring.command{NoticeRegistCommand.java[NoticeRegistCommand" modifiers="1" timestamp="1623987582536"/>
+<typeInfo handle="=spring_MVC/C:\/maven Repository\/org\/springframework\/spring-webmvc\/4.3.2.RELEASE\/spring-webmvc-4.3.2.RELEASE.jar&lt;org.springframework.web.servlet(View.class[View" modifiers="1537" timestamp="1623733299674"/>
 </typeInfoHistroy>

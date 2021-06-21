@@ -32,6 +32,12 @@
 		class="org.springframework.web.multipart.commons.CommonsMultipartResolver"
 		p:defaultEncoding="utf-8">
 	</beans:bean>
+	
+	<beans:bean class="org.springframework.web.servlet.view.BeanNameViewResolver" 
+				p:order="1" />
+
+	<context:component-scan
+		base-package="com.spring.controller" />
 
 	<interceptors>
 		<interceptor>
@@ -46,11 +52,10 @@
 		</interceptor>
 	</interceptors>
 
-	
+	<beans:bean id="downloadFile" class="com.spring.view.FileDownloadView" />
+		
+ 
 
-
-	<context:component-scan
-		base-package="com.spring.controller" />
 
 
 

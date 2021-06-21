@@ -22,7 +22,7 @@
    </bean>
    
    <!-- file upload -->
-   <bean id="fileUpladPath" class="java.lang.String">
+   <bean id="fileUploadPath" class="java.lang.String">
    		<constructor-arg value="${pds.upload}" />
    </bean>
    
