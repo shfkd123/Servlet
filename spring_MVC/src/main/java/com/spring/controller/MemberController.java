@@ -17,6 +17,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -38,6 +39,12 @@ public class MemberController {
 
 	@Autowired
 	private MemberService memberService;
+	
+//	@ModelAttribute("admin")
+//	public MemberVO getAdmin()throws Exception {
+//		MemberVO member = memberService.getMember("mimi");
+//		return member;
+//	}
 
 	@RequestMapping("/main")
 	public void main() {
@@ -53,7 +60,7 @@ public class MemberController {
 
 		return mnv;
 	}
-
+ 
 	@RequestMapping(value = "/registForm", method = RequestMethod.GET)
 	public String registForm() {
 		String url = "member/regist";
@@ -174,7 +181,7 @@ public class MemberController {
 	}
 
 	@RequestMapping(value = "/detail", method = RequestMethod.GET)
-	public String detail(String id, Model model) throws SQLException {
+	public String detail(@ModelAttribute("id") String id, Model model) throws SQLException {
 		// Model을 adapter에게 받는다.
 		String url = "member/detail";
 

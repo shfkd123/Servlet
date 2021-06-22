@@ -13,12 +13,13 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="" key="selection"/>
+		<item value=".open" key="selection"/>
 		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="true" key="wholeword"/>
 		<list key="findhistory">
+			<item value=".page"/>
 			<item value="log"/>
 			<item value="loging"/>
 			<item value="login"/>
@@ -33,9 +34,9 @@
 			<item value="p:session-ref=&quot;session&quot; /&gt;"/>
 			<item value="p:session-ref=&quot;session&quot; /&gt;&#x09;"/>
 			<item value="sqlSession"/>
-			<item value="session.close();"/>
 		</list>
 		<list key="replacehistory">
+			<item value=".open"/>
 			<item value=""/>
 			<item value="PdsVO pds "/>
 			<item value="boardService"/>
@@ -50,7 +51,6 @@
 			<item value="attach"/>
 			<item value="Pds"/>
 			<item value="from pds"/>
-			<item value="resultType=&quot;pds&quot;"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

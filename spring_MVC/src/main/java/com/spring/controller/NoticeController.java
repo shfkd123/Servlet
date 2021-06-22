@@ -30,9 +30,11 @@ public class NoticeController {
 	public void main()throws Exception{}
 	
 	@RequestMapping("/list")
-	public void list(SearchCriteria cri, Model model)throws SQLException{
+	public void list(SearchCriteria cri, Model model)throws Exception{
 		
 		Map<String,Object> dataMap = noticeService.getNoticeList(cri);
+		
+//		if(true) throw new Exception();
 		
 		model.addAttribute("dataMap",dataMap);	
 		

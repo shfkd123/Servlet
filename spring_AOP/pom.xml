@@ -38,6 +38,13 @@
 		    <artifactId>aspectjweaver</artifactId>
 		    <version>1.9.2</version>
 		</dependency>
+		
+		<dependency>
+		    <groupId>org.apache.tiles</groupId>
+		    <artifactId>tiles-extras</artifactId>
+		    <version>${org.apache.tiles-version}</version>
+		</dependency>
+		
 				
 		<!-- AspectJ -->
 		<dependency>

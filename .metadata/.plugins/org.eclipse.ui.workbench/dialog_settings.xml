@@ -40,6 +40,8 @@
 		<item value="true" key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID"/>
 		<item value="true" key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\pc24\Desktop\servlet_JSP 수업\0622_spring.zip"/>
+			<item value="C:\Users\pc24\Desktop\gggg.zip"/>
 			<item value="C:\Users\pc24\Desktop\servlet_JSP 수업\0621_spring.zip"/>
 			<item value="C:\Users\pc24\Desktop\servlet_JSP 수업\0619_spring.zip"/>
 			<item value="C:\Users\pc24\Desktop\servlet_JSP 수업\0618_spring.zip"/>
@@ -58,8 +60,6 @@
 			<item value="C:\Users\pc24\Desktop\0605_command_bootstrap.zip"/>
 			<item value="C:\Users\pc24\Desktop\0604_command_bootstrap.zip"/>
 			<item value="C:\Users\pc24\Desktop\0603_command_bootstrap.zip"/>
-			<item value="C:\Users\pc24\Desktop\현재 커맨드.zip"/>
-			<item value="C:\Users\pc24\Desktop\0602Command_bootstrap.zip"/>
 		</list>
 	</section>
 </section>
