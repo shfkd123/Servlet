@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\pc24\Downloads\20210111-master (5).zip"/>
+		<item value="C:\Users\pc24\Desktop\spring.zip"/>
 		<item value="C:\Users\pc24\Desktop\servlet_JSP 수업\0615_command_bootstrap&amp;스프링.zip"/>
 		<item value="D:\A_TeachingMaterial\6.JspSpring\Semi_Prj.zip"/>
 	</list>
@@ -19,6 +21,10 @@
 			<item value=""/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\pc24\Desktop\spring.zip"/>
+			<item value="D:\A_TeachingMaterial\6.JspSpring\workspace\20210111-master (6).zip"/>
+			<item value="C:\Users\pc24\Downloads\20210111-master (6).zip"/>
+			<item value="C:\Users\pc24\Downloads\20210111-master (5).zip"/>
 			<item value="C:\Users\pc24\Desktop\0611프로젝트 합본.zip"/>
 			<item value="C:\Users\pc24\Desktop\세프.zip"/>
 			<item value="C:\Users\pc24\Desktop\0603_command_bootstrap.zip"/>

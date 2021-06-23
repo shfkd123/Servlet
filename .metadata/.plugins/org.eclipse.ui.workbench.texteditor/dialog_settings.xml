@@ -13,12 +13,13 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value=".open" key="selection"/>
+		<item value="scope" key="selection"/>
 		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="true" key="wholeword"/>
 		<list key="findhistory">
+			<item value="scope"/>
 			<item value=".page"/>
 			<item value="log"/>
 			<item value="loging"/>
@@ -33,7 +34,6 @@
 			<item value="session"/>
 			<item value="p:session-ref=&quot;session&quot; /&gt;"/>
 			<item value="p:session-ref=&quot;session&quot; /&gt;&#x09;"/>
-			<item value="sqlSession"/>
 		</list>
 		<list key="replacehistory">
 			<item value=".open"/>
