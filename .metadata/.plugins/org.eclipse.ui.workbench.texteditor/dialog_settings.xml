@@ -13,18 +13,19 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="scope" key="selection"/>
+		<item value="" key="selection"/>
 		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="true" key="wholeword"/>
 		<list key="findhistory">
+			<item value="&#x09;&#x09;// TODO Auto-generated method stub"/>
+			<item value="// TODO Auto-generated method stub"/>
 			<item value="scope"/>
 			<item value=".page"/>
 			<item value="log"/>
 			<item value="loging"/>
 			<item value="login"/>
-			<item value="// TODO Auto-generated method stub"/>
 			<item value="BoardVO board "/>
 			<item value="nno"/>
 			<item value="service"/>
@@ -33,11 +34,10 @@
 			<item value="javax"/>
 			<item value="session"/>
 			<item value="p:session-ref=&quot;session&quot; /&gt;"/>
-			<item value="p:session-ref=&quot;session&quot; /&gt;&#x09;"/>
 		</list>
 		<list key="replacehistory">
-			<item value=".open"/>
 			<item value=""/>
+			<item value=".open"/>
 			<item value="PdsVO pds "/>
 			<item value="boardService"/>
 			<item value="sqlSession"/>
