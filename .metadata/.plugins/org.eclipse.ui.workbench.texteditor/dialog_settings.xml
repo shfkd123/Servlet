@@ -19,6 +19,11 @@
 		<item value="true" key="wrap"/>
 		<item value="true" key="wholeword"/>
 		<list key="findhistory">
+			<item value="loginUserLogScheduler"/>
+			<item value="LoginUserLogScheduler"/>
+			<item value="sqlsessino"/>
+			<item value="AjaxSuccessSecurityRedirectHandler"/>
+			<item value="error:function(error){"/>
 			<item value="&#x09;&#x09;// TODO Auto-generated method stub"/>
 			<item value="// TODO Auto-generated method stub"/>
 			<item value="scope"/>
@@ -29,13 +34,9 @@
 			<item value="BoardVO board "/>
 			<item value="nno"/>
 			<item value="service"/>
-			<item value="LOGOUT"/>
-			<item value="re"/>
-			<item value="javax"/>
-			<item value="session"/>
-			<item value="p:session-ref=&quot;session&quot; /&gt;"/>
 		</list>
 		<list key="replacehistory">
+			<item value="AjaxErrorSecurityRedirectHandler"/>
 			<item value=""/>
 			<item value=".open"/>
 			<item value="PdsVO pds "/>
@@ -50,7 +51,6 @@
 			<item value="Attach"/>
 			<item value="attach"/>
 			<item value="Pds"/>
-			<item value="from pds"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

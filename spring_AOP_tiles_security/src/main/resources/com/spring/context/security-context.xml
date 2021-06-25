@@ -49,8 +49,15 @@
 				invalidate-session="true"
 				logout-success-url="/"
 				delete-cookies="JSESSIONID"
-		
 		/>
+		<session-management invalid-session-url="/common/loginTimeOut">
+			<concurrency-control
+				expired-url="/common/loginExpired"
+				max-sessions="1"
+				session-registry-ref="sessionRegistry"
+			/>
+		
+		</session-management>
 	</http>
 	
 	<beans:bean id="loginSuccessHandler"
@@ -61,4 +68,8 @@
 				class="com.spring.security.LoginFailureHandler"
 				
 	/>
+	
+	<beans:bean  id="sessionRegistry" 
+	class="org.springframework.security.core.session.SessionRegistryImpl"/>
+	
 </beans:beans>
