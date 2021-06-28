@@ -13,12 +13,14 @@
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="" key="selection"/>
+		<item value="support" key="selection"/>
 		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="true" key="wholeword"/>
 		<list key="findhistory">
+			<item value="support"/>
+			<item value="suppor"/>
 			<item value="loginUserLogScheduler"/>
 			<item value="LoginUserLogScheduler"/>
 			<item value="sqlsessino"/>
@@ -32,8 +34,6 @@
 			<item value="loging"/>
 			<item value="login"/>
 			<item value="BoardVO board "/>
-			<item value="nno"/>
-			<item value="service"/>
 		</list>
 		<list key="replacehistory">
 			<item value="AjaxErrorSecurityRedirectHandler"/>

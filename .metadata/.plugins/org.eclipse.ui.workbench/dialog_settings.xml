@@ -19,9 +19,14 @@
 		</list>
 	</section>
 	<section name="NewWizardAction">
-		<item value="org.eclipse.jst.jsp.ui.internal.wizard.NewJSPWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<item value="com.tomato.exerd.ui.wizards.newEXerdWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
-			<item value="org.eclipse.wst.web.ui"/>
+			<item value="com.tomato.exerd.ui.newWizards.category"/>
+			<item value="org.eclipse.jdt.ui.java"/>
+			<item value="org.eclipse.emf.codegen.ui.JETNewWizards"/>
+			<item value="org.eclipse.pde.PDE"/>
+			<item value="org.eclipse.team.svn.ui.repository"/>
+			<item value="org.eclipse.jst.ws.ui.new"/>
 		</list>
 	</section>
 	<section name="ImportExportAction">
@@ -40,6 +45,9 @@
 		<item value="true" key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID"/>
 		<item value="true" key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="C:\Users\pc24\Desktop\servlet_JSP 수업\0628_spring.zip"/>
+			<item value="C:\Users\pc24\Desktop\TESST.zip"/>
+			<item value="C:\Users\pc24\Desktop\servlet_JSP 수업\0625_spring.zip"/>
 			<item value="C:\Users\pc24\Desktop\servlet_JSP 수업\0624_spring.zip"/>
 			<item value="C:\Users\pc24\Desktop\servlet_JSP 수업\0623_spring.zip"/>
 			<item value="C:\Users\pc24\Desktop\spring_security.zip"/>
@@ -57,9 +65,6 @@
 			<item value="C:\Users\pc24\Desktop\0611프로젝트 합본.zip"/>
 			<item value="C:\Users\pc24\Desktop\servlet_JSP 수업\0610_command_bootstrap.zip"/>
 			<item value="C:\Users\pc24\Desktop\프로젝트 합본.zip"/>
-			<item value="C:\Users\pc24\Desktop\servlet_JSP 수업\0609_command_bootstrap.zip"/>
-			<item value="C:\Users\pc24\Desktop\servlet_JSP 수업\0608_command_bootstrap.zip"/>
-			<item value="C:\Users\pc24\Desktop\0607_command_bootstrap.zip"/>
 		</list>
 	</section>
 </section>
